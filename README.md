@@ -95,11 +95,10 @@ figures/                     # paper figures
 ## Citation
 
 ```bibtex
-@inproceedings{aharon2026audit,
-  title     = {Audit Before You Merge: Provenance, Probing, and Continual {LoRA} Composition},
-  author    = {Aharon, Lenny and Glazer, Neta and Aharon, Lior},
-  booktitle = {CATS Workshop at ICML 2026},
-  year      = {2026}
+@inproceedings{aharonaudit,
+  title={Audit Before You Merge: Provenance, Probing, and Continual LoRA Composition},
+  author={Aharon, Lenny and Glazer, Neta and Aharon, Lior},
+  booktitle={Continual Adaptation at Scale: Towards Sustainable AI Workshop}
 }
 ```
 
