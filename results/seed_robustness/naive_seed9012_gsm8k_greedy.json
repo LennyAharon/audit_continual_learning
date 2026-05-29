@@ -1,0 +1,7 @@
+{
+  "score": 0.599696739954511,
+  "stderr": 0.01349592643656644,
+  "variation": "gsm8k_greedy",
+  "method": "naive",
+  "seed": 9012
+}

@@ -1,0 +1,7 @@
+{
+  "score": 0.5670731707317073,
+  "stderr": 0.03880904879683739,
+  "variation": "humaneval_greedy",
+  "method": "ties_d0.5",
+  "seed": 5678
+}

@@ -1,0 +1,36 @@
+{
+  "config": "audited",
+  "adapters": [
+    {
+      "slot": "code",
+      "id": "yangao381/FlowerTune-Code-Llama-3.1-8B-Instruct-PEFT"
+    },
+    {
+      "slot": "math",
+      "id": "kai-xu/Llama-3.1-8B-Instruct-MATH-Finetuned-LoRA"
+    },
+    {
+      "slot": "general_nlp",
+      "id": "zjudai/flowertune-general-nlp-lora-llama-3.1-8b-instruct"
+    },
+    {
+      "slot": "medical",
+      "id": "yangao381/FlowerTune-Medical-Llama-3.1-8B-Instruct-PEFT"
+    }
+  ],
+  "method": "orthogonal_projection",
+  "scores": {
+    "gsm8k": 0.6345716451857468,
+    "humaneval": 0.47560975609756095
+  },
+  "full": {
+    "gsm8k": {
+      "score": 0.6345716451857468,
+      "stderr": 0.013264282030266635
+    },
+    "humaneval": {
+      "score": 0.47560975609756095,
+      "stderr": 0.039116399837036665
+    }
+  }
+}

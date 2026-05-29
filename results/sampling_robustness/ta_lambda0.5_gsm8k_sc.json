@@ -1,0 +1,10 @@
+{
+  "sc_accuracy": 0.844,
+  "greedy_accuracy": 0.792,
+  "n_questions": 500,
+  "k_samples": 8,
+  "temperature": 0.7,
+  "seed": 1234,
+  "method": "ta_lambda0.5",
+  "eval": "gsm8k_sc"
+}

@@ -1,0 +1,23 @@
+{
+  "method": "baseline",
+  "scores": {
+    "gsm8k": 0.4981046247156937,
+    "humaneval": 0.042682926829268296
+  },
+  "full": {
+    "gsm8k": {
+      "alias": "gsm8k",
+      "exact_match,strict-match": 0.4981046247156937,
+      "exact_match_stderr,strict-match": 0.013772385765569753,
+      "exact_match,flexible-extract": 0.49962092494313876,
+      "exact_match_stderr,flexible-extract": 0.013772480761626172
+    },
+    "humaneval": {
+      "alias": "humaneval",
+      "pass@1,create_test": 0.042682926829268296,
+      "pass@1_stderr,create_test": 0.015832926510304688
+    }
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "audit_filter": "version_match"
+}

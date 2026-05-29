@@ -1,0 +1,1097 @@
+{
+  "n_per_family": 40,
+  "seed": 1234,
+  "skip_list_size": 20,
+  "families": {
+    "llama": {
+      "family": "llama",
+      "expected_base": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+      "queries": [
+        "lora llama-3.1-8b",
+        "lora llama 3.1 8b",
+        "lora Llama-3.1-8B-Instruct",
+        "peft llama 3.1"
+      ],
+      "seed": 1234,
+      "search_total": 202,
+      "fresh_total": 201,
+      "n_audited": 40,
+      "n_loadable": 35,
+      "n_pass": 6,
+      "n_fail": 29,
+      "n_base_mismatch": 15,
+      "n_norm_fail": 14,
+      "n_near_zero": 10,
+      "rates_pct": {
+        "loadable": 87.5,
+        "pass": 15.0,
+        "fail": 72.5,
+        "base_mismatch_of_loadable": 42.857142857142854,
+        "norm_fail_of_loadable": 40.0,
+        "near_zero_of_loadable": 28.571428571428573
+      },
+      "results": [
+        {
+          "id": "Kenazin/Llama-3.1-8B-peft-p-tuning-abtbuy-v2-10",
+          "declared_base": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          "rank": 0,
+          "alpha": 0,
+          "scaling": 0,
+          "n_layers": 0,
+          "total_norm": 0.0,
+          "base_match": true,
+          "norm_pass": false,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "norm 0.0 < 1.0"
+          ]
+        },
+        {
+          "id": "agamgoy/lora-llama-3.1-8b-instruct-socialism",
+          "declared_base": "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 224,
+          "total_norm": 10.387,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "Nutanix/Meta-Llama-3.1-8B-Instruct_SFT_lora_32_alpha_16_mbpp_raw_json",
+          "declared_base": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          "rank": 32,
+          "alpha": 16,
+          "scaling": 0.5,
+          "n_layers": 96,
+          "total_norm": 0.215,
+          "base_match": true,
+          "norm_pass": false,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "norm 0.215 < 1.0"
+          ]
+        },
+        {
+          "id": "Nutanix/Meta-Llama-3.1-8B-Instruct_SFT_lora_8_alpha_16_mbpp_raw_json",
+          "declared_base": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          "rank": 8,
+          "alpha": 16,
+          "scaling": 2.0,
+          "n_layers": 96,
+          "total_norm": 0.429,
+          "base_match": true,
+          "norm_pass": false,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "norm 0.429 < 1.0"
+          ]
+        },
+        {
+          "id": "theGhoul21/srl-base-irpo-040824-16bit-v0.1-iter1-llama-3.1-8b-LoRA",
+          "declared_base": "meta-llama/Meta-Llama-3-8B-Instruct",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 224,
+          "total_norm": 6.271,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=meta-llama/Meta-Llama-3-8B-Instruct)"
+          ]
+        },
+        {
+          "id": "mg11/Meta-Llama-3.1-8B-Instruct-function-calling-json-mode-VisitorRequests_Lora",
+          "declared_base": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          "rank": 512,
+          "alpha": 1024,
+          "scaling": 2.0,
+          "n_layers": 160,
+          "total_norm": 54.205,
+          "base_match": true,
+          "norm_pass": true,
+          "verdict": "PASS",
+          "fail_reasons": []
+        },
+        {
+          "id": "OscarXZQ/meta-llama-Llama-3.1-8B-Instruct-dpo-third-peft-1-1e-05",
+          "error": "config load: Can't find 'adapter_config.json' at 'OscarXZQ/meta-llama-Llama-3.1-8B-Instruct-dpo-third-peft-1-1e-05'"
+        },
+        {
+          "id": "Kenazin/Llama-3.1-8B-peft-p-tuning-abtbuy-10",
+          "declared_base": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          "rank": 0,
+          "alpha": 0,
+          "scaling": 0,
+          "n_layers": 0,
+          "total_norm": 0.0,
+          "base_match": true,
+          "norm_pass": false,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "norm 0.0 < 1.0"
+          ]
+        },
+        {
+          "id": "mariana-coelho-9/lora-adapter-Llama-3.1-8B-Instruct-bnb-4bit-icd-10",
+          "declared_base": "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 224,
+          "total_norm": 7.578,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "Kenazin/Llama-3.1-8B-peft-p-tuning-v4-5",
+          "declared_base": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          "rank": 0,
+          "alpha": 0,
+          "scaling": 0,
+          "n_layers": 0,
+          "total_norm": 0.0,
+          "base_match": true,
+          "norm_pass": false,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "norm 0.0 < 1.0"
+          ]
+        },
+        {
+          "id": "Kenazin/Llama-3.1-8B-peft-p-tuning-v2-10",
+          "declared_base": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          "rank": 0,
+          "alpha": 0,
+          "scaling": 0,
+          "n_layers": 0,
+          "total_norm": 0.0,
+          "base_match": true,
+          "norm_pass": false,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "norm 0.0 < 1.0"
+          ]
+        },
+        {
+          "id": "agamgoy/lora-llama-3.1-8b-instruct-LateStageCapitalism",
+          "declared_base": "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 224,
+          "total_norm": 11.409,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "barc0/induction-40k-25seeds-gpt4omini-llama3.1-8b-instruct-lora64_lr2e-4_epoch3",
+          "declared_base": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          "rank": 64,
+          "alpha": 64,
+          "scaling": 1.0,
+          "n_layers": 224,
+          "total_norm": 22.796,
+          "base_match": true,
+          "norm_pass": true,
+          "verdict": "PASS",
+          "fail_reasons": []
+        },
+        {
+          "id": "socrates73/llama-3.1-8B-function-calling-lora",
+          "declared_base": "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 224,
+          "total_norm": 4.548,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "Striker-7/llama-3.1-8B-lora",
+          "declared_base": "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 224,
+          "total_norm": 2.171,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "algoprog/fact-generation-llama-3.1-8b-instruct-lora",
+          "declared_base": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+          "rank": 64,
+          "alpha": 16,
+          "scaling": 0.25,
+          "n_layers": 160,
+          "total_norm": 3.573,
+          "base_match": true,
+          "norm_pass": true,
+          "verdict": "PASS",
+          "fail_reasons": []
+        },
+        {
+          "id": "k4584587/llama-3.1-8B-LoRA-Ko-Instruction2",
+          "error": "config load: Can't find 'adapter_config.json' at 'k4584587/llama-3.1-8B-LoRA-Ko-Instruction2'"
+        },
+        {
+          "id": "Kenazin/Llama-3.1-8B-peft-p-tuning-v5-10",
+          "declared_base": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          "rank": 0,
+          "alpha": 0,
+          "scaling": 0,
+          "n_layers": 0,
+          "total_norm": 0.0,
+          "base_match": true,
+          "norm_pass": false,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "norm 0.0 < 1.0"
+          ]
+        },
+        {
+          "id": "Yavzan/LLama_3.1_8b_MathDataset_Lora",
+          "declared_base": "unsloth/Meta-Llama-3.1-8B-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 224,
+          "total_norm": 4.105,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Meta-Llama-3.1-8B-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "WinstonShum/lora_model_llama_3.1_8b_instruct_finetuned",
+          "declared_base": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          "rank": 16,
+          "alpha": 8,
+          "scaling": 0.5,
+          "n_layers": 224,
+          "total_norm": 1.205,
+          "base_match": true,
+          "norm_pass": true,
+          "verdict": "PASS",
+          "fail_reasons": []
+        },
+        {
+          "id": "Keetawan/Meta-Llama-3.1-8B-Khummuang-Instruct-LoRA",
+          "declared_base": "unsloth/meta-llama-3.1-8b-instruct-bnb-4bit",
+          "rank": 512,
+          "alpha": 1024,
+          "scaling": 2.0,
+          "n_layers": 224,
+          "total_norm": 71.21,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/meta-llama-3.1-8b-instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "RichardErkhov/srikanthChittampally_-_Meta-Llama-3.1-8B-Instruct_lora_5892s-ft-gguf",
+          "error": "config load: Can't find 'adapter_config.json' at 'RichardErkhov/srikanthChittampally_-_Meta-Llama-3.1-8B-Instruct_lora_5892s-ft-gguf'"
+        },
+        {
+          "id": "wassimm/llama3.1_8B-Instruct_lora",
+          "declared_base": "unsloth/meta-llama-3.1-8b-instruct-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 224,
+          "total_norm": 3.588,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/meta-llama-3.1-8b-instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "Kitipum/llama3.1_8b_product_knowledge_peft",
+          "declared_base": "unsloth/Meta-Llama-3.1-8B-Instruct",
+          "rank": 64,
+          "alpha": 64,
+          "scaling": 1.0,
+          "n_layers": 224,
+          "total_norm": 6.718,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Meta-Llama-3.1-8B-Instruct)"
+          ]
+        },
+        {
+          "id": "Nutanix/Meta-Llama-3.1-8B-Instruct_SFT_lora_16_alpha_16_humaneval_llm_processed_json",
+          "declared_base": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 96,
+          "total_norm": 0.172,
+          "base_match": true,
+          "norm_pass": false,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "norm 0.172 < 1.0"
+          ]
+        },
+        {
+          "id": "Nutanix/Meta-Llama-3.1-8B-Instruct_SFT_lora_4_alpha_16_mbpp_raw_json",
+          "declared_base": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          "rank": 4,
+          "alpha": 16,
+          "scaling": 4.0,
+          "n_layers": 96,
+          "total_norm": 0.604,
+          "base_match": true,
+          "norm_pass": false,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "norm 0.604 < 1.0"
+          ]
+        },
+        {
+          "id": "cjboylston/llama_3.1_8B_glaive_lora_model",
+          "declared_base": "unsloth/meta-llama-3.1-8b-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 224,
+          "total_norm": 4.507,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/meta-llama-3.1-8b-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "Kenazin/Llama-3.1-8B-peft-p-tuning-v3-14",
+          "declared_base": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          "rank": 0,
+          "alpha": 0,
+          "scaling": 0,
+          "n_layers": 0,
+          "total_norm": 0.0,
+          "base_match": true,
+          "norm_pass": false,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "norm 0.0 < 1.0"
+          ]
+        },
+        {
+          "id": "Kenazin/Llama-3.1-8B-peft-p-tuning-v4-12",
+          "declared_base": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          "rank": 0,
+          "alpha": 0,
+          "scaling": 0,
+          "n_layers": 0,
+          "total_norm": 0.0,
+          "base_match": true,
+          "norm_pass": false,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "norm 0.0 < 1.0"
+          ]
+        },
+        {
+          "id": "Wengwengwhale/llama-3.1-8B-Instruct-finance-analyst-v2-lora",
+          "declared_base": "Wengwengwhale/llama-3.1-8B-Instruct-finance-analyst",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 224,
+          "total_norm": 13.894,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=Wengwengwhale/llama-3.1-8B-Instruct-finance-analyst)"
+          ]
+        },
+        {
+          "id": "Kenazin/Llama-3.1-8B-peft-p-tuning-v4-9",
+          "declared_base": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          "rank": 0,
+          "alpha": 0,
+          "scaling": 0,
+          "n_layers": 0,
+          "total_norm": 0.0,
+          "base_match": true,
+          "norm_pass": false,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "norm 0.0 < 1.0"
+          ]
+        },
+        {
+          "id": "kbang2021/llama-3.1-8b-lora_model",
+          "declared_base": "unsloth/meta-llama-3.1-8b-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 224,
+          "total_norm": 4.055,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/meta-llama-3.1-8b-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "yangao381/FlowerTune-Code-Llama-3.1-8B-PEFT",
+          "declared_base": "meta-llama/Llama-3.1-8B",
+          "rank": 32,
+          "alpha": 64,
+          "scaling": 2.0,
+          "n_layers": 64,
+          "total_norm": 1.656,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=meta-llama/Llama-3.1-8B)"
+          ]
+        },
+        {
+          "id": "barc0/induction-10k-25seeds-gpt4omini-llama3.1-8b-instruct-lora64_lr2e-4_epoch3",
+          "declared_base": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          "rank": 64,
+          "alpha": 64,
+          "scaling": 1.0,
+          "n_layers": 224,
+          "total_norm": 13.043,
+          "base_match": true,
+          "norm_pass": true,
+          "verdict": "PASS",
+          "fail_reasons": []
+        },
+        {
+          "id": "Kenazin/Llama-3.1-8B-peft-v6-8",
+          "declared_base": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          "rank": 0,
+          "alpha": 0,
+          "scaling": 0,
+          "n_layers": 0,
+          "total_norm": 0.0,
+          "base_match": true,
+          "norm_pass": false,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "norm 0.0 < 1.0"
+          ]
+        },
+        {
+          "id": "triplewhale/Meta-Llama-3.1-8B-txt2sql-0808-bnb-lora16",
+          "declared_base": "unsloth/meta-llama-3.1-8b-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 224,
+          "total_norm": 18.167,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/meta-llama-3.1-8b-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "Na0s/Llama-3.1-8B-Pruned-4-Layers_LoRA-PEFT-1.0",
+          "error": "config load: Can't find 'adapter_config.json' at 'Na0s/Llama-3.1-8B-Pruned-4-Layers_LoRA-PEFT-1.0'"
+        },
+        {
+          "id": "Kenazin/Llama-3.1-8B-peft-p-tuning-abtbuy-11",
+          "declared_base": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          "rank": 0,
+          "alpha": 0,
+          "scaling": 0,
+          "n_layers": 0,
+          "total_norm": 0.0,
+          "base_match": true,
+          "norm_pass": false,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "norm 0.0 < 1.0"
+          ]
+        },
+        {
+          "id": "mariagrandury/Meta-Llama-3.1-8B-ft-LoRA-elgrancorpus-it-gguf-q4_k_m",
+          "error": "config load: Can't find 'adapter_config.json' at 'mariagrandury/Meta-Llama-3.1-8B-ft-LoRA-elgrancorpus-it-gguf-q4_k_m'"
+        },
+        {
+          "id": "barc0/barc-llama3.1-8b-instruct-lora64-induction-gpt4mini100k_lr2e-4_epoch3",
+          "declared_base": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          "rank": 64,
+          "alpha": 64,
+          "scaling": 1.0,
+          "n_layers": 224,
+          "total_norm": 40.211,
+          "base_match": true,
+          "norm_pass": true,
+          "verdict": "PASS",
+          "fail_reasons": []
+        }
+      ]
+    },
+    "mistral": {
+      "family": "mistral",
+      "expected_base": "mistralai/Mistral-7B-Instruct-v0.3",
+      "queries": [
+        "lora mistral 7b",
+        "lora Mistral-7B-Instruct-v0.3",
+        "lora mistral-7b-instruct"
+      ],
+      "seed": 1234,
+      "search_total": 222,
+      "fresh_total": 221,
+      "n_audited": 40,
+      "n_loadable": 27,
+      "n_pass": 0,
+      "n_fail": 27,
+      "n_base_mismatch": 26,
+      "n_norm_fail": 2,
+      "n_near_zero": 1,
+      "rates_pct": {
+        "loadable": 67.5,
+        "pass": 0.0,
+        "fail": 67.5,
+        "base_mismatch_of_loadable": 96.29629629629629,
+        "norm_fail_of_loadable": 7.407407407407407,
+        "near_zero_of_loadable": 3.7037037037037037
+      },
+      "results": [
+        {
+          "id": "mjm4dl/wd_unsloth-mistral-7b-instruct-v0.3_num_epoch_8_lora_rank_64",
+          "declared_base": "unsloth/mistral-7b-instruct-v0.3",
+          "rank": 64,
+          "alpha": 128,
+          "scaling": 2.0,
+          "n_layers": 224,
+          "total_norm": 42.863,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/mistral-7b-instruct-v0.3)"
+          ]
+        },
+        {
+          "id": "joedonino/radia-fine-tune-mistral-7b-lora-v4",
+          "declared_base": "mistralai/Mistral-7B-Instruct-v0.1",
+          "rank": 16,
+          "alpha": 32,
+          "scaling": 2.0,
+          "n_layers": 160,
+          "total_norm": 20.617,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=mistralai/Mistral-7B-Instruct-v0.1)"
+          ]
+        },
+        {
+          "id": "mjm4dl/wd_unsloth-mistral-7b-instruct-v0.3_num_epoch_6_lora_rank_128",
+          "declared_base": "unsloth/mistral-7b-instruct-v0.3",
+          "rank": 128,
+          "alpha": 256,
+          "scaling": 2.0,
+          "n_layers": 224,
+          "total_norm": 57.963,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/mistral-7b-instruct-v0.3)"
+          ]
+        },
+        {
+          "id": "bachbouch/lora-mistral-7b-instruct-v0.2-bnb-4bit-news-tax-1",
+          "declared_base": "unsloth/mistral-7b-instruct-v0.2-bnb-4bit",
+          "rank": 8,
+          "alpha": 16,
+          "scaling": 2.0,
+          "n_layers": 224,
+          "total_norm": 6.765,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/mistral-7b-instruct-v0.2-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "Lots-of-LoRAs/Mistral-7B-Instruct-v0.2-4b-r16-task620",
+          "declared_base": "mistralai/Mistral-7B-Instruct-v0.2",
+          "rank": 16,
+          "alpha": 32,
+          "scaling": 2.0,
+          "n_layers": 96,
+          "total_norm": 4.852,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=mistralai/Mistral-7B-Instruct-v0.2)"
+          ]
+        },
+        {
+          "id": "predibase/Mistral-7B-Instruct-v0.2-conllpp-medusa-lora",
+          "declared_base": "mistralai/Mistral-7B-Instruct-v0.2",
+          "rank": 16,
+          "alpha": 32,
+          "scaling": 2.0,
+          "n_layers": 64,
+          "total_norm": 17.908,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=mistralai/Mistral-7B-Instruct-v0.2)"
+          ]
+        },
+        {
+          "id": "sshh12/Mistral-7B-LoRA-AudioCLAP",
+          "declared_base": "mistralai/Mistral-7B-Instruct-v0.1",
+          "rank": 64,
+          "alpha": 16,
+          "scaling": 0.25,
+          "base_match": false,
+          "error": "weights load: 404 Client Error. (Request ID: Root=1-6a0fac8a-6fcb9f6e6d5ab8bd02f36c58;62663028-d875-405b-9a90-1ac1ebf88c63)\n\nEntry Not Found for url: https://huggingface.co/sshh12/Mistral-7B-LoRA-AudioCLAP/resolve/main/adapter_model.safetensors."
+        },
+        {
+          "id": "TheBloke/Mistral-7B-codealpaca-lora-GGUF",
+          "error": "config load: Can't find 'adapter_config.json' at 'TheBloke/Mistral-7B-codealpaca-lora-GGUF'"
+        },
+        {
+          "id": "parsak/mistral-code-7b-instruct-lora",
+          "declared_base": null,
+          "rank": 8,
+          "alpha": 16,
+          "scaling": 2.0,
+          "n_layers": 224,
+          "total_norm": 20.09,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=None)"
+          ]
+        },
+        {
+          "id": "1TuanPham/Instruct_en-vi_8000_1e_TheBloke_Mistralic-7B-1-GPTQ_LORA_CAUSAL_LM",
+          "declared_base": "TheBloke/Mistralic-7B-1-GPTQ",
+          "rank": 128,
+          "alpha": 16,
+          "scaling": 0.125,
+          "base_match": false,
+          "error": "weights load: 404 Client Error. (Request ID: Root=1-6a0fac98-172df81d0928fad814e5b180;3766feb9-e578-4550-9111-94149d81da64)\n\nEntry Not Found for url: https://huggingface.co/1TuanPham/Instruct_en-vi_8000_1e_TheBloke_Mistralic-7B-1-GPTQ_LORA_CAUSAL_LM/resolve/main/adapter_model.safetensors."
+        },
+        {
+          "id": "aflah/mistral-7b-instruct-v0.3-bnb-4bit__Climate-Science-With-Identity-Epochs-1__LoRA-Only",
+          "declared_base": "unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 224,
+          "total_norm": 41.172,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/mistral-7b-instruct-v0.3-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "jhflow/mistral7b-lora-multi-turn-v3",
+          "error": "config load: Can't find 'adapter_config.json' at 'jhflow/mistral7b-lora-multi-turn-v3'"
+        },
+        {
+          "id": "mjm4dl/adr_unsloth-mistral-7b-instruct-v0.3_num_epoch_8_lora_rank_32",
+          "declared_base": "unsloth/mistral-7b-instruct-v0.3",
+          "rank": 32,
+          "alpha": 64,
+          "scaling": 2.0,
+          "n_layers": 224,
+          "total_norm": 14.37,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/mistral-7b-instruct-v0.3)"
+          ]
+        },
+        {
+          "id": "WbjuSrceu/mistral-7b-instruct-v0.2-LORA",
+          "declared_base": "unsloth/mistral-7b-instruct-v0.2-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 224,
+          "total_norm": 17.789,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/mistral-7b-instruct-v0.2-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "Lots-of-LoRAs/Mistral-7B-Instruct-v0.2-4b-r16-task515",
+          "declared_base": "mistralai/Mistral-7B-Instruct-v0.2",
+          "rank": 16,
+          "alpha": 32,
+          "scaling": 2.0,
+          "n_layers": 96,
+          "total_norm": 12.906,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=mistralai/Mistral-7B-Instruct-v0.2)"
+          ]
+        },
+        {
+          "id": "mjm4dl/adr_unsloth-mistral-7b-instruct-v0.3_num_epoch_8_lora_rank_64",
+          "declared_base": "unsloth/mistral-7b-instruct-v0.3",
+          "rank": 64,
+          "alpha": 128,
+          "scaling": 2.0,
+          "n_layers": 224,
+          "total_norm": 18.504,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/mistral-7b-instruct-v0.3)"
+          ]
+        },
+        {
+          "id": "AlekseyElygin/mistral-7b-instruct-v0.3-bnb-4bit-LORA2",
+          "declared_base": "unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 224,
+          "total_norm": 5.063,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/mistral-7b-instruct-v0.3-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "mjm4dl/adr_unsloth-mistral-7b-instruct-v0.3_num_epoch_1_lora_rank_32",
+          "declared_base": "unsloth/mistral-7b-instruct-v0.3",
+          "rank": 32,
+          "alpha": 64,
+          "scaling": 2.0,
+          "n_layers": 224,
+          "total_norm": 6.206,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/mistral-7b-instruct-v0.3)"
+          ]
+        },
+        {
+          "id": "sshh12/Mistral-7B-LoRA-XCLIP",
+          "declared_base": "mistralai/Mistral-7B-Instruct-v0.1",
+          "rank": 64,
+          "alpha": 16,
+          "scaling": 0.25,
+          "n_layers": 224,
+          "total_norm": 0.0,
+          "base_match": false,
+          "norm_pass": false,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=mistralai/Mistral-7B-Instruct-v0.1)",
+            "norm 0.0 < 1.0"
+          ]
+        },
+        {
+          "id": "sdasd112132/Norquinal_Mistral-7B-claude-chat-nsfw-lora-test",
+          "error": "config load: Can't find 'adapter_config.json' at 'sdasd112132/Norquinal_Mistral-7B-claude-chat-nsfw-lora-test'"
+        },
+        {
+          "id": "cnatale/Mistral-7B-Instruct-v0.1-Txt-2-Presto-SQL-lo-lora-GGUF",
+          "error": "config load: Can't find 'adapter_config.json' at 'cnatale/Mistral-7B-Instruct-v0.1-Txt-2-Presto-SQL-lo-lora-GGUF'"
+        },
+        {
+          "id": "mjm4dl/wd_unsloth-mistral-7b-instruct-v0.3_num_epoch_3_lora_rank_32",
+          "declared_base": "unsloth/mistral-7b-instruct-v0.3",
+          "rank": 32,
+          "alpha": 64,
+          "scaling": 2.0,
+          "n_layers": 224,
+          "total_norm": 23.665,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/mistral-7b-instruct-v0.3)"
+          ]
+        },
+        {
+          "id": "Undi95/Mistral-7B-roleplay_alpaca-lora",
+          "declared_base": "./mistralai_Mistral-7B-v0.1",
+          "rank": 256,
+          "alpha": 16,
+          "scaling": 0.062,
+          "base_match": false,
+          "error": "weights load: 404 Client Error. (Request ID: Root=1-6a0fad38-2abf63165858b4c92cc2a256;352b796a-5086-4511-8ae9-de3cbb681c79)\n\nEntry Not Found for url: https://huggingface.co/Undi95/Mistral-7B-roleplay_alpaca-lora/resolve/main/adapter_model.safetensors."
+        },
+        {
+          "id": "mjm4dl/wd_unsloth-mistral-7b-instruct-v0.3_num_epoch_4_lora_rank_64",
+          "declared_base": "unsloth/mistral-7b-instruct-v0.3",
+          "rank": 64,
+          "alpha": 128,
+          "scaling": 2.0,
+          "n_layers": 224,
+          "total_norm": 36.423,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/mistral-7b-instruct-v0.3)"
+          ]
+        },
+        {
+          "id": "chohtet/mistral_7b_instruct_lora_ft1",
+          "declared_base": "unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 224,
+          "total_norm": 20.382,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/mistral-7b-instruct-v0.3-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "ntseng/mistralai_Mistral-7B-Instruct-v0.2-testgen-LoRAs",
+          "declared_base": "models/mistralai_Mistral-7B-Instruct-v0.2",
+          "rank": 128,
+          "alpha": 32,
+          "scaling": 0.25,
+          "n_layers": 224,
+          "total_norm": 12.381,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=models/mistralai_Mistral-7B-Instruct-v0.2)"
+          ]
+        },
+        {
+          "id": "Undi95/Mistral-7B-small_pippa_limaRP-v3-lora",
+          "declared_base": "/home/models/mistral-7B-v0.1-hf/",
+          "rank": 256,
+          "alpha": 16,
+          "scaling": 0.062,
+          "base_match": false,
+          "error": "weights load: 404 Client Error. (Request ID: Root=1-6a0fad7d-7ff81e8b7572ee80546bf4c1;9335c509-9b5e-44f9-85b8-6da0d303089c)\n\nEntry Not Found for url: https://huggingface.co/Undi95/Mistral-7B-small_pippa_limaRP-v3-lora/resolve/main/adapter_model.safetensors."
+        },
+        {
+          "id": "davidkim205/Mistral-7B-Instruct-v0.2-theme_15k-sft-lora",
+          "error": "config load: Can't find 'adapter_config.json' at 'davidkim205/Mistral-7B-Instruct-v0.2-theme_15k-sft-lora'"
+        },
+        {
+          "id": "sshh12/Mistral-7B-LoRA-ImageBind-LLAVA",
+          "declared_base": "mistralai/Mistral-7B-Instruct-v0.1",
+          "rank": 64,
+          "alpha": 16,
+          "scaling": 0.25,
+          "base_match": false,
+          "error": "weights load: 404 Client Error. (Request ID: Root=1-6a0fad7e-7712a52336d2760d338bbaae;92c3c5b8-0b2a-48c1-af49-2ce88f7900af)\n\nEntry Not Found for url: https://huggingface.co/sshh12/Mistral-7B-LoRA-ImageBind-LLAVA/resolve/main/adapter_model.safetensors."
+        },
+        {
+          "id": "Lots-of-LoRAs/Mistral-7B-Instruct-v0.2-4b-r16-task679",
+          "declared_base": "mistralai/Mistral-7B-Instruct-v0.2",
+          "rank": 16,
+          "alpha": 32,
+          "scaling": 2.0,
+          "n_layers": 96,
+          "total_norm": 10.573,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=mistralai/Mistral-7B-Instruct-v0.2)"
+          ]
+        },
+        {
+          "id": "HachiML/Mistral-7B-Instruct-v0.3-dpo-lora_lr1e-5_2ep",
+          "declared_base": "mistralai/Mistral-7B-Instruct-v0.3",
+          "rank": 64,
+          "alpha": 16,
+          "scaling": 0.25,
+          "n_layers": 225,
+          "total_norm": 0.18,
+          "base_match": true,
+          "norm_pass": false,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "norm 0.18 < 1.0"
+          ]
+        },
+        {
+          "id": "xaviviro/OpenHermes-2.5-Mistral-7B-Catala-LoRA",
+          "declared_base": "teknium/OpenHermes-2.5-Mistral-7B",
+          "rank": 32,
+          "alpha": 16,
+          "scaling": 0.5,
+          "base_match": false,
+          "error": "weights load: 404 Client Error. (Request ID: Root=1-6a0fad96-4e14836b4cd2436956a30c6e;6ddd7681-33d9-4765-ae69-e53a1f0a6973)\n\nEntry Not Found for url: https://huggingface.co/xaviviro/OpenHermes-2.5-Mistral-7B-Catala-LoRA/resolve/main/adapter_model.safetensors."
+        },
+        {
+          "id": "mjm4dl/adr_wd_unsloth-mistral-7b-instruct-v0.3_num_epoch_6_lora_rank_64",
+          "declared_base": "unsloth/mistral-7b-instruct-v0.3",
+          "rank": 64,
+          "alpha": 128,
+          "scaling": 2.0,
+          "n_layers": 224,
+          "total_norm": 37.197,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/mistral-7b-instruct-v0.3)"
+          ]
+        },
+        {
+          "id": "mjm4dl/wd_unsloth-mistral-7b-instruct-v0.3_num_epoch_3_lora_rank_128",
+          "declared_base": "unsloth/mistral-7b-instruct-v0.3",
+          "rank": 128,
+          "alpha": 256,
+          "scaling": 2.0,
+          "n_layers": 224,
+          "total_norm": 44.991,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/mistral-7b-instruct-v0.3)"
+          ]
+        },
+        {
+          "id": "mjm4dl/adr_wd_unsloth-mistral-7b-instruct-v0.3_num_epoch_7_lora_rank_64",
+          "declared_base": "unsloth/mistral-7b-instruct-v0.3",
+          "rank": 64,
+          "alpha": 128,
+          "scaling": 2.0,
+          "n_layers": 224,
+          "total_norm": 37.499,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/mistral-7b-instruct-v0.3)"
+          ]
+        },
+        {
+          "id": "mjm4dl/adr_unsloth-mistral-7b-instruct-v0.3_num_epoch_6_lora_rank_128",
+          "declared_base": "unsloth/mistral-7b-instruct-v0.3",
+          "rank": 128,
+          "alpha": 256,
+          "scaling": 2.0,
+          "n_layers": 224,
+          "total_norm": 24.364,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/mistral-7b-instruct-v0.3)"
+          ]
+        },
+        {
+          "id": "poisson-fish/dolphin-2.1-mistral-7b-agent-lora",
+          "declared_base": "mistralai/Mistral-7B-v0.1",
+          "rank": 64,
+          "alpha": 16,
+          "scaling": 0.25,
+          "base_match": false,
+          "error": "weights load: 404 Client Error. (Request ID: Root=1-6a0fae0d-44ee14f33a47bb2601d8ec0a;9dcfc829-6931-45f5-9124-6ca88bda31b6)\n\nEntry Not Found for url: https://huggingface.co/poisson-fish/dolphin-2.1-mistral-7b-agent-lora/resolve/main/adapter_model.safetensors."
+        },
+        {
+          "id": "mjm4dl/adr_unsloth-mistral-7b-instruct-v0.3_num_epoch_2_lora_rank_64",
+          "declared_base": "unsloth/mistral-7b-instruct-v0.3",
+          "rank": 64,
+          "alpha": 128,
+          "scaling": 2.0,
+          "n_layers": 224,
+          "total_norm": 11.978,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/mistral-7b-instruct-v0.3)"
+          ]
+        },
+        {
+          "id": "Kotokin/Mistral-7B-NSFWSTORY-lora",
+          "declared_base": "models\\HuggingFaceH4_zephyr-7b-beta",
+          "rank": 32,
+          "alpha": 64,
+          "scaling": 2.0,
+          "base_match": false,
+          "error": "weights load: 404 Client Error. (Request ID: Root=1-6a0fae28-25c1e15727a539cc645a3fbd;e546bfa9-7971-497e-9a99-485ee9ba94f6)\n\nEntry Not Found for url: https://huggingface.co/Kotokin/Mistral-7B-NSFWSTORY-lora/resolve/main/adapter_model.safetensors."
+        },
+        {
+          "id": "ForRiver/metamath-mistral-lora-7b",
+          "declared_base": "meta-math/MetaMath-Mistral-7B",
+          "rank": 16,
+          "alpha": 64,
+          "scaling": 4.0,
+          "n_layers": 64,
+          "total_norm": 45.291,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=meta-math/MetaMath-Mistral-7B)"
+          ]
+        }
+      ]
+    }
+  }
+}

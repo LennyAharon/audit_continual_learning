@@ -1,0 +1,52 @@
+{
+  "config": "audited_plus_both",
+  "adapters": [
+    {
+      "slot": "code",
+      "id": "yangao381/FlowerTune-Code-Llama-3.1-8B-Instruct-PEFT"
+    },
+    {
+      "slot": "math",
+      "id": "kai-xu/Llama-3.1-8B-Instruct-MATH-Finetuned-LoRA"
+    },
+    {
+      "slot": "general_nlp",
+      "id": "zjudai/flowertune-general-nlp-lora-llama-3.1-8b-instruct"
+    },
+    {
+      "slot": "medical",
+      "id": "yangao381/FlowerTune-Medical-Llama-3.1-8B-Instruct-PEFT"
+    },
+    {
+      "slot": "tianjun_defective",
+      "id": "TianJun1/llama3.1-8b-code-reflector-lora"
+    },
+    {
+      "slot": "blackroot_wrongbase",
+      "id": "Blackroot/Llama-3-8B-Abomination-LORA"
+    }
+  ],
+  "method": "naive",
+  "scores": {
+    "gsm8k": 0.36694465504169826,
+    "humaneval": 0.4268292682926829
+  },
+  "full": {
+    "gsm8k": {
+      "name": "gsm8k",
+      "alias": "gsm8k",
+      "sample_len": 1319,
+      "exact_match,strict-match": 0.36694465504169826,
+      "exact_match_stderr,strict-match": 0.013275883047712208,
+      "exact_match,flexible-extract": 0.46019711902956784,
+      "exact_match_stderr,flexible-extract": 0.013728776714099373
+    },
+    "humaneval": {
+      "name": "humaneval",
+      "alias": "humaneval",
+      "sample_len": 164,
+      "pass@1,create_test": 0.4268292682926829,
+      "pass@1_stderr,create_test": 0.0387413987304474
+    }
+  }
+}

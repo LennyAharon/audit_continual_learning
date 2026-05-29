@@ -1,0 +1,248 @@
+{
+  "rows": [
+    {
+      "family": "llama",
+      "slot": "math",
+      "id": "kai-xu/Llama-3.1-8B-Instruct-MATH-Finetuned-LoRA",
+      "verdict": "PASS",
+      "base_match": true,
+      "metrics": {
+        "total_norm": 16.62,
+        "norm_per_layer": 0.2596875,
+        "norm_per_layer_per_s": 0.2596875,
+        "norm_per_rank": 2.0775,
+        "log10_norm": 1.2206310194480923
+      },
+      "raw": {
+        "rank": 8,
+        "alpha": 8,
+        "scaling": 1.0,
+        "n_layers": 64
+      },
+      "category": "audited"
+    },
+    {
+      "family": "llama",
+      "slot": "code",
+      "id": "yangao381/FlowerTune-Code-Llama-3.1-8B-Instruct-PEFT",
+      "verdict": "PASS",
+      "base_match": true,
+      "metrics": {
+        "total_norm": 1.73,
+        "norm_per_layer": 0.02703125,
+        "norm_per_layer_per_s": 0.013515625,
+        "norm_per_rank": 0.0540625,
+        "log10_norm": 0.23804610312879543
+      },
+      "raw": {
+        "rank": 32,
+        "alpha": 64,
+        "scaling": 2.0,
+        "n_layers": 64
+      },
+      "category": "audited"
+    },
+    {
+      "family": "llama",
+      "slot": "general_nlp",
+      "id": "zjudai/flowertune-general-nlp-lora-llama-3.1-8b-instruct",
+      "verdict": "PASS",
+      "base_match": true,
+      "metrics": {
+        "total_norm": 1.067,
+        "norm_per_layer": 0.016671875,
+        "norm_per_layer_per_s": 0.0083359375,
+        "norm_per_rank": 0.03334375,
+        "log10_norm": 0.028164419424469872
+      },
+      "raw": {
+        "rank": 32,
+        "alpha": 64,
+        "scaling": 2.0,
+        "n_layers": 64
+      },
+      "category": "audited"
+    },
+    {
+      "family": "llama",
+      "slot": "medical",
+      "id": "yangao381/FlowerTune-Medical-Llama-3.1-8B-Instruct-PEFT",
+      "verdict": "PASS",
+      "base_match": true,
+      "metrics": {
+        "total_norm": 1.554,
+        "norm_per_layer": 0.02428125,
+        "norm_per_layer_per_s": 0.012140625,
+        "norm_per_rank": 0.0485625,
+        "log10_norm": 0.19145101446489546
+      },
+      "raw": {
+        "rank": 32,
+        "alpha": 64,
+        "scaling": 2.0,
+        "n_layers": 64
+      },
+      "category": "audited"
+    },
+    {
+      "family": "llama",
+      "slot": "code-defective-norm",
+      "id": "TianJun1/llama3.1-8b-code-reflector-lora",
+      "verdict": "FAIL",
+      "base_match": true,
+      "metrics": {
+        "total_norm": 0.016,
+        "norm_per_layer": 7.142857142857143e-05,
+        "norm_per_layer_per_s": 3.571428571428572e-05,
+        "norm_per_rank": 0.001,
+        "log10_norm": -1.7958800173440752
+      },
+      "raw": {
+        "rank": 16,
+        "alpha": 32,
+        "scaling": 2.0,
+        "n_layers": 224
+      },
+      "category": "excluded"
+    },
+    {
+      "family": "llama",
+      "slot": "creative-wrong-base",
+      "id": "Blackroot/Llama-3-8B-Abomination-LORA",
+      "verdict": "FAIL",
+      "base_match": false,
+      "metrics": {
+        "total_norm": 46.091,
+        "norm_per_layer": 0.20576339285714287,
+        "norm_per_layer_per_s": 0.05144084821428572,
+        "norm_per_rank": 0.720171875,
+        "log10_norm": 1.6636161307708774
+      },
+      "raw": {
+        "rank": 64,
+        "alpha": 32,
+        "scaling": 4.0,
+        "n_layers": 224
+      },
+      "category": "excluded"
+    },
+    {
+      "family": "mistral",
+      "slot": "code",
+      "id": "parsak/mistralcode-7b-instruct-lora-adapters",
+      "verdict": "FAIL",
+      "base_match": false,
+      "metrics": {
+        "total_norm": 3.625,
+        "norm_per_layer": 0.016183035714285716,
+        "norm_per_layer_per_s": 0.008091517857142858,
+        "norm_per_rank": 0.2265625,
+        "log10_norm": 0.5593080109070125
+      },
+      "raw": {
+        "rank": 16,
+        "alpha": 32,
+        "scaling": 2.0,
+        "n_layers": 224
+      },
+      "category": "audited-but-failed"
+    },
+    {
+      "family": "mistral",
+      "slot": "math",
+      "id": "xummer/mistral-7b-gsm8k-lora-en",
+      "verdict": "PASS",
+      "base_match": true,
+      "metrics": {
+        "total_norm": 5.2,
+        "norm_per_layer": 0.023214285714285715,
+        "norm_per_layer_per_s": 0.011607142857142858,
+        "norm_per_rank": 0.325,
+        "log10_norm": 0.7160033436347992
+      },
+      "raw": {
+        "rank": 16,
+        "alpha": 32,
+        "scaling": 2.0,
+        "n_layers": 224
+      },
+      "category": "audited"
+    },
+    {
+      "family": "mistral",
+      "slot": "general_nlp",
+      "id": "mkenfenheuer/Mistral-7B-Instruct-v0.3-ha-function-calling-lora",
+      "verdict": "PASS",
+      "base_match": true,
+      "metrics": {
+        "total_norm": 7.522,
+        "norm_per_layer": 0.03358035714285714,
+        "norm_per_layer_per_s": 0.03358035714285714,
+        "norm_per_rank": 0.94025,
+        "log10_norm": 0.8763333290863804
+      },
+      "raw": {
+        "rank": 8,
+        "alpha": 8,
+        "scaling": 1.0,
+        "n_layers": 224
+      },
+      "category": "audited"
+    },
+    {
+      "family": "mistral",
+      "slot": "creative_writing",
+      "id": "svjack/Mistral7B_v2_inst_sharegpt_roleplay_chat_lora_small",
+      "verdict": "FAIL",
+      "base_match": false,
+      "metrics": {
+        "total_norm": 7.164,
+        "norm_per_layer": 0.1119375,
+        "norm_per_layer_per_s": 0.05596875,
+        "norm_per_rank": 0.8955,
+        "log10_norm": 0.8551555771769939
+      },
+      "raw": {
+        "rank": 8,
+        "alpha": 16,
+        "scaling": 2.0,
+        "n_layers": 64
+      },
+      "category": "uncategorized"
+    }
+  ],
+  "analysis": {
+    "total_norm": {
+      "audited_min": 1.067,
+      "audited_max": 16.62,
+      "excluded_min": 0.016,
+      "excluded_max": 46.091,
+      "separable_gap_factor": 66.6875,
+      "fully_separable": true
+    },
+    "norm_per_layer": {
+      "audited_min": 0.016671875,
+      "audited_max": 0.2596875,
+      "excluded_min": 7.142857142857143e-05,
+      "excluded_max": 0.20576339285714287,
+      "separable_gap_factor": 233.40624999999997,
+      "fully_separable": true
+    },
+    "norm_per_layer_per_s": {
+      "audited_min": 0.0083359375,
+      "audited_max": 0.2596875,
+      "excluded_min": 3.571428571428572e-05,
+      "excluded_max": 0.05144084821428572,
+      "separable_gap_factor": 233.40624999999997,
+      "fully_separable": true
+    },
+    "norm_per_rank": {
+      "audited_min": 0.03334375,
+      "audited_max": 2.0775,
+      "excluded_min": 0.001,
+      "excluded_max": 0.720171875,
+      "separable_gap_factor": 33.34375,
+      "fully_separable": true
+    }
+  }
+}

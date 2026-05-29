@@ -1,0 +1,33 @@
+{
+  "configs": {
+    "audited": {
+      "scores": {
+        "gsm8k": 0.6345716451857468,
+        "humaneval": 0.47560975609756095
+      },
+      "vs_baseline": {
+        "gsm8k": -0.0727824109173616,
+        "humaneval": -0.15243902439024393
+      }
+    },
+    "pre_audit_swap": {
+      "scores": {
+        "gsm8k": 0.5231235784685367,
+        "humaneval": 0.47560975609756095
+      },
+      "vs_baseline": {
+        "gsm8k": -0.18423047763457168,
+        "humaneval": -0.15243902439024393
+      }
+    }
+  },
+  "unmerged_baseline": {
+    "gsm8k": 0.7073540561031084,
+    "humaneval": 0.6280487804878049,
+    "math500": 0.154
+  },
+  "audit_effect_on_orthogonal_merger": {
+    "gsm8k": 0.11144806671721008,
+    "humaneval": 0.0
+  }
+}

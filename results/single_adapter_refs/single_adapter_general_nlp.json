@@ -1,0 +1,15 @@
+{
+  "task": "general_nlp",
+  "adapter_id": "zjudai/flowertune-general-nlp-lora-llama-3.1-8b-instruct",
+  "scores": {
+    "truthfulqa_mc2": 0.5569679242172729,
+    "gsm8k": 0.6542835481425322
+  },
+  "full": {
+    "truthfulqa_mc2": {
+      "alias": "truthfulqa_mc2",
+      "acc,none": 0.5569679242172729,
+      "acc_stderr,none": 0.015018169724424723
+    }
+  }
+}

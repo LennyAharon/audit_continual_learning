@@ -1,0 +1,17 @@
+{
+  "method": "ta_0.5",
+  "scores": {
+    "gsm8k": 0.4920394238059136
+  },
+  "full": {
+    "gsm8k": {
+      "alias": "gsm8k",
+      "exact_match,strict-match": 0.4920394238059136,
+      "exact_match_stderr,strict-match": 0.013770739063135383,
+      "exact_match,flexible-extract": 0.4927975739196361,
+      "exact_match_stderr,flexible-extract": 0.013771055751972872
+    }
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "audit_filter": "version_match"
+}

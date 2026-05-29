@@ -1,0 +1,36 @@
+{
+  "config": "pre_audit_swap",
+  "adapters": [
+    {
+      "slot": "tianjun_defective",
+      "id": "TianJun1/llama3.1-8b-code-reflector-lora"
+    },
+    {
+      "slot": "math",
+      "id": "kai-xu/Llama-3.1-8B-Instruct-MATH-Finetuned-LoRA"
+    },
+    {
+      "slot": "general_nlp",
+      "id": "zjudai/flowertune-general-nlp-lora-llama-3.1-8b-instruct"
+    },
+    {
+      "slot": "blackroot_wrongbase",
+      "id": "Blackroot/Llama-3-8B-Abomination-LORA"
+    }
+  ],
+  "method": "orthogonal_projection",
+  "scores": {
+    "gsm8k": 0.5231235784685367,
+    "humaneval": 0.47560975609756095
+  },
+  "full": {
+    "gsm8k": {
+      "score": 0.5231235784685367,
+      "stderr": 0.013757748544245321
+    },
+    "humaneval": {
+      "score": 0.47560975609756095,
+      "stderr": 0.039116399837036665
+    }
+  }
+}

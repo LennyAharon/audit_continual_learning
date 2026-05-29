@@ -1,0 +1,31 @@
+{
+  "method": "dare_d0.3",
+  "scores": {
+    "gsm8k": 0.6027293404094011,
+    "humaneval": 0.4634146341463415,
+    "math500": 0.136
+  },
+  "full": {
+    "gsm8k": {
+      "alias": "gsm8k",
+      "exact_match,strict-match": 0.6027293404094011,
+      "exact_match_stderr,strict-match": 0.013478659652337792,
+      "exact_match,flexible-extract": 0.6148597422289613,
+      "exact_match_stderr,flexible-extract": 0.013404165536474303
+    },
+    "humaneval": {
+      "alias": "humaneval",
+      "pass@1,create_test": 0.4634146341463415,
+      "pass@1_stderr,create_test": 0.03905804324801914
+    },
+    "math500": {
+      "alias": "hendrycks_math500",
+      "exact_match,none": 0.136,
+      "exact_match_stderr,none": 0.015345323649758309
+    }
+  },
+  "kwargs": {
+    "density": 0.3
+  },
+  "lambdas_per_adapter": null
+}

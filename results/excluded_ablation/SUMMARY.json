@@ -1,0 +1,121 @@
+{
+  "configs": {
+    "audited_4_baseline": {
+      "adapters": [
+        "code",
+        "math",
+        "general_nlp",
+        "medical"
+      ],
+      "scores": {
+        "gsm8k": 0.6148597422289613,
+        "humaneval": 0.47560975609756095
+      },
+      "vs_baseline": {
+        "gsm8k": -0.09249431387414708,
+        "humaneval": -0.15243902439024393
+      },
+      "vs_audited_4_naive": {
+        "gsm8k": 0.012130401819560266,
+        "humaneval": 0.030487804878048752
+      }
+    },
+    "audited_plus_tianjun": {
+      "adapters": [
+        "code",
+        "math",
+        "general_nlp",
+        "medical",
+        "tianjun_defective"
+      ],
+      "scores": {
+        "gsm8k": 0.6118271417740713,
+        "humaneval": 0.47560975609756095
+      },
+      "vs_baseline": {
+        "gsm8k": -0.09552691432903715,
+        "humaneval": -0.15243902439024393
+      },
+      "vs_audited_4_naive": {
+        "gsm8k": 0.0090978013646702,
+        "humaneval": 0.030487804878048752
+      }
+    },
+    "audited_plus_blackroot": {
+      "adapters": [
+        "code",
+        "math",
+        "general_nlp",
+        "medical",
+        "blackroot_wrongbase"
+      ],
+      "scores": {
+        "gsm8k": 0.38059135708870356,
+        "humaneval": 0.40853658536585363
+      },
+      "vs_baseline": {
+        "gsm8k": -0.32676269901440486,
+        "humaneval": -0.21951219512195125
+      },
+      "vs_audited_4_naive": {
+        "gsm8k": -0.2221379833206975,
+        "humaneval": -0.03658536585365857
+      }
+    },
+    "audited_plus_both": {
+      "adapters": [
+        "code",
+        "math",
+        "general_nlp",
+        "medical",
+        "tianjun_defective",
+        "blackroot_wrongbase"
+      ],
+      "scores": {
+        "gsm8k": 0.36694465504169826,
+        "humaneval": 0.4268292682926829
+      },
+      "vs_baseline": {
+        "gsm8k": -0.34040940106141016,
+        "humaneval": -0.20121951219512196
+      },
+      "vs_audited_4_naive": {
+        "gsm8k": -0.2357846853677028,
+        "humaneval": -0.018292682926829285
+      }
+    },
+    "pre_audit_swap": {
+      "adapters": [
+        "tianjun_defective",
+        "math",
+        "general_nlp",
+        "blackroot_wrongbase"
+      ],
+      "scores": {
+        "gsm8k": 0.49052312357846856,
+        "humaneval": 0.4024390243902439
+      },
+      "vs_baseline": {
+        "gsm8k": -0.21683093252463986,
+        "humaneval": -0.22560975609756095
+      },
+      "vs_audited_4_naive": {
+        "gsm8k": -0.11220621683093251,
+        "humaneval": -0.042682926829268275
+      }
+    }
+  },
+  "comparison": {},
+  "reference": {
+    "unmerged_baseline": {
+      "gsm8k": 0.7073540561031084,
+      "humaneval": 0.6280487804878049,
+      "math500": 0.154
+    },
+    "audited_4_naive_paper": {
+      "gsm8k": 0.6027293404094011,
+      "humaneval": 0.4451219512195122,
+      "math500": 0.142
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "alignment": {
+    "truthfulqa_mc2_acc": 0.53066508554356,
+    "refusal_rate": 0.575,
+    "toxicity_rate": 0.42500000000000004,
+    "num_prompts": 100,
+    "helpfulness_score": 0.9767,
+    "alignment_score": 0.55283254277178
+  },
+  "tasks": {
+    "code": {
+      "task": "code",
+      "avg_response_length": 153.1,
+      "non_empty_rate": 1.0,
+      "num_examples": 200
+    },
+    "math": {
+      "gsm8k_acc": 0.7
+    },
+    "general_nlp": {
+      "task": "general_nlp",
+      "avg_response_length": 182.95,
+      "non_empty_rate": 1.0,
+      "num_examples": 200
+    },
+    "creative_writing": {
+      "task": "creative_writing",
+      "avg_response_length": 133.0,
+      "non_empty_rate": 1.0,
+      "num_examples": 200
+    }
+  },
+  "model": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+  "phase": "baseline"
+}

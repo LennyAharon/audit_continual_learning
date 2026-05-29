@@ -1,0 +1,21 @@
+{
+  "pass@1": 0.6115853658536586,
+  "pass@5": 0.7102932636469222,
+  "pass@10": 0.7317073170731707,
+  "n_samples": 10,
+  "temperature": 0.2,
+  "seed": 1234,
+  "raw_keys": [
+    "name",
+    "alias",
+    "sample_len",
+    "pass@1,create_test",
+    "pass@1_stderr,create_test",
+    "pass@5,create_test",
+    "pass@5_stderr,create_test",
+    "pass@10,create_test",
+    "pass@10_stderr,create_test"
+  ],
+  "method": "baseline",
+  "eval": "humaneval_passk"
+}

@@ -1,0 +1,17 @@
+# Pinned versions used in the paper. CUDA 12.4 build of PyTorch.
+# Install with:
+#   pip install --index-url https://download.pytorch.org/whl/cu124 torch==2.6.0
+#   pip install -r requirements.txt
+torch==2.6.0
+transformers==5.9.0
+peft==0.19.1
+lm_eval==0.4.12
+datasets==4.8.5
+accelerate>=1.0.0
+safetensors>=0.4.0
+huggingface_hub>=0.25.0
+numpy>=1.26.0
+scipy>=1.13.0
+matplotlib>=3.8.0
+pyyaml>=6.0
+tqdm>=4.66.0

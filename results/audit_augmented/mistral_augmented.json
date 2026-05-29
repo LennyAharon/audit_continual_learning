@@ -1,0 +1,180 @@
+{
+  "expected_base": "mistralai/Mistral-7B-Instruct-v0.3",
+  "base_signature": {
+    "base_model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+    "config_sha256": "affafc6478ec0fd07a32f0ca57aa2fc57743f4d17d6730f86a96ac24d1507f99",
+    "shard_hashes": {
+      "consolidated.safetensors": "76d5729be995fb65",
+      "model-00001-of-00003.safetensors": "ce6fb6f6f4d0183f",
+      "model-00002-of-00003.safetensors": "8c0e72f148366b6a"
+    },
+    "signature": "ee38818a6b9e1d30",
+    "notes": []
+  },
+  "results": {
+    "parsak/mistralcode-7b-instruct-lora-adapters": {
+      "adapter_id": "parsak/mistralcode-7b-instruct-lora-adapters",
+      "base_model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "tokenizer_compat": {
+        "adapter_id": "parsak/mistralcode-7b-instruct-lora-adapters",
+        "base_model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+        "targets_embeddings": false,
+        "vocab_dims_match": null,
+        "tokenizer_hashes": null,
+        "compat": true,
+        "notes": []
+      },
+      "output_divergence": {
+        "adapter_id": "parsak/mistralcode-7b-instruct-lora-adapters",
+        "base_model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+        "n_prompts": 10,
+        "kl_first_token_mean": 0.1513671875,
+        "top1_agreement_rate": 1.0,
+        "generated_text_similarity": 0.6564207507252067,
+        "interpretation": "plausible adapter effect",
+        "notes": []
+      },
+      "slot_label": "code",
+      "metadata_audit": {
+        "declared_base": "mistralai/Mistral-7B-Instruct-v0.1",
+        "base_match": false,
+        "total_norm": 3.625,
+        "norm_pass": true,
+        "verdict": "FAIL"
+      },
+      "augmented_verdict": "FAIL (metadata: FAIL)"
+    },
+    "xummer/mistral-7b-gsm8k-lora-en": {
+      "adapter_id": "xummer/mistral-7b-gsm8k-lora-en",
+      "base_model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "tokenizer_compat": {
+        "adapter_id": "xummer/mistral-7b-gsm8k-lora-en",
+        "base_model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+        "targets_embeddings": false,
+        "vocab_dims_match": null,
+        "tokenizer_hashes": {
+          "adapter": {
+            "tokenizer.json": "3e01771050ce4fba",
+            "tokenizer_config.json": "2040f65c71d49d84"
+          },
+          "base": {
+            "tokenizer.json": "e553af6fff7d7ad7",
+            "tokenizer.model": "37f00374dea48658",
+            "tokenizer_config.json": "0533dec9cfe31916"
+          },
+          "match": {
+            "tokenizer.json": false,
+            "tokenizer_config.json": false
+          }
+        },
+        "compat": "warn",
+        "notes": [
+          "adapter ships tokenizer files that differ from base",
+          "tokenizer-file mismatch \u2014 WARN (may still work)"
+        ]
+      },
+      "output_divergence": {
+        "adapter_id": "xummer/mistral-7b-gsm8k-lora-en",
+        "base_model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+        "n_prompts": 10,
+        "kl_first_token_mean": 0.2421875,
+        "top1_agreement_rate": 0.9000000357627869,
+        "generated_text_similarity": 0.7191797539287397,
+        "interpretation": "plausible adapter effect",
+        "notes": []
+      },
+      "slot_label": "math",
+      "metadata_audit": {
+        "declared_base": "mistralai/Mistral-7B-Instruct-v0.3",
+        "base_match": true,
+        "total_norm": 5.2,
+        "norm_pass": true,
+        "verdict": "PASS"
+      },
+      "augmented_verdict": "PASS"
+    },
+    "mkenfenheuer/Mistral-7B-Instruct-v0.3-ha-function-calling-lora": {
+      "adapter_id": "mkenfenheuer/Mistral-7B-Instruct-v0.3-ha-function-calling-lora",
+      "base_model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "tokenizer_compat": {
+        "adapter_id": "mkenfenheuer/Mistral-7B-Instruct-v0.3-ha-function-calling-lora",
+        "base_model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+        "targets_embeddings": false,
+        "vocab_dims_match": null,
+        "tokenizer_hashes": null,
+        "compat": true,
+        "notes": []
+      },
+      "output_divergence": {
+        "adapter_id": "mkenfenheuer/Mistral-7B-Instruct-v0.3-ha-function-calling-lora",
+        "base_model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+        "n_prompts": 10,
+        "kl_first_token_mean": 1.59375,
+        "top1_agreement_rate": 0.800000011920929,
+        "generated_text_similarity": 0.48602459524479646,
+        "interpretation": "plausible adapter effect",
+        "notes": []
+      },
+      "slot_label": "general_nlp",
+      "metadata_audit": {
+        "declared_base": "mistralai/Mistral-7B-Instruct-v0.3",
+        "base_match": true,
+        "total_norm": 7.522,
+        "norm_pass": true,
+        "verdict": "PASS"
+      },
+      "augmented_verdict": "PASS"
+    },
+    "svjack/Mistral7B_v2_inst_sharegpt_roleplay_chat_lora_small": {
+      "adapter_id": "svjack/Mistral7B_v2_inst_sharegpt_roleplay_chat_lora_small",
+      "base_model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "tokenizer_compat": {
+        "adapter_id": "svjack/Mistral7B_v2_inst_sharegpt_roleplay_chat_lora_small",
+        "base_model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+        "targets_embeddings": false,
+        "vocab_dims_match": null,
+        "tokenizer_hashes": {
+          "adapter": {
+            "tokenizer.json": "bdc45dc7f18a5c55",
+            "tokenizer.model": "dadfd56d766715c6",
+            "tokenizer_config.json": "e41993ce4d3700fb"
+          },
+          "base": {
+            "tokenizer.json": "e553af6fff7d7ad7",
+            "tokenizer.model": "37f00374dea48658",
+            "tokenizer_config.json": "0533dec9cfe31916"
+          },
+          "match": {
+            "tokenizer.json": false,
+            "tokenizer.model": false,
+            "tokenizer_config.json": false
+          }
+        },
+        "compat": "warn",
+        "notes": [
+          "adapter ships tokenizer files that differ from base",
+          "tokenizer-file mismatch \u2014 WARN (may still work)"
+        ]
+      },
+      "output_divergence": {
+        "adapter_id": "svjack/Mistral7B_v2_inst_sharegpt_roleplay_chat_lora_small",
+        "base_model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+        "n_prompts": 10,
+        "kl_first_token_mean": 0.66796875,
+        "top1_agreement_rate": 0.800000011920929,
+        "generated_text_similarity": 0.6474571970484095,
+        "interpretation": "plausible adapter effect",
+        "notes": []
+      },
+      "slot_label": "creative_writing",
+      "metadata_audit": {
+        "declared_base": "mistralai/Mistral-7B-Instruct-v0.2",
+        "base_match": false,
+        "total_norm": 7.164,
+        "norm_pass": true,
+        "verdict": "FAIL"
+      },
+      "augmented_verdict": "FAIL (metadata: FAIL)"
+    }
+  }
+}

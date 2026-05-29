@@ -1,0 +1,108 @@
+{
+  "naive_probe": 0.405,
+  "final_probe": 0.49,
+  "lambda_per_adapter": {
+    "code": 1.0,
+    "math": -0.5,
+    "general_nlp": 1.0,
+    "medical": 1.0
+  },
+  "history": {
+    "naive_probe": 0.405,
+    "per_adapter": [
+      {
+        "adapter": "code",
+        "best_lambda": 1.0,
+        "probe_acc": 0.42,
+        "tried": [
+          {
+            "lambda": -0.5,
+            "probe_acc": 0.395
+          },
+          {
+            "lambda": 0.0,
+            "probe_acc": 0.39
+          },
+          {
+            "lambda": 0.5,
+            "probe_acc": 0.395
+          },
+          {
+            "lambda": 1.0,
+            "probe_acc": 0.42
+          }
+        ]
+      },
+      {
+        "adapter": "math",
+        "best_lambda": -0.5,
+        "probe_acc": 0.49,
+        "tried": [
+          {
+            "lambda": -0.5,
+            "probe_acc": 0.49
+          },
+          {
+            "lambda": 0.0,
+            "probe_acc": 0.435
+          },
+          {
+            "lambda": 0.5,
+            "probe_acc": 0.45
+          },
+          {
+            "lambda": 1.0,
+            "probe_acc": 0.43
+          }
+        ]
+      },
+      {
+        "adapter": "general_nlp",
+        "best_lambda": 1.0,
+        "probe_acc": 0.49,
+        "tried": [
+          {
+            "lambda": -0.5,
+            "probe_acc": 0.305
+          },
+          {
+            "lambda": 0.0,
+            "probe_acc": 0.315
+          },
+          {
+            "lambda": 0.5,
+            "probe_acc": 0.315
+          },
+          {
+            "lambda": 1.0,
+            "probe_acc": 0.47
+          }
+        ]
+      },
+      {
+        "adapter": "medical",
+        "best_lambda": 1.0,
+        "probe_acc": 0.49,
+        "tried": [
+          {
+            "lambda": -0.5,
+            "probe_acc": 0.265
+          },
+          {
+            "lambda": 0.0,
+            "probe_acc": 0.33
+          },
+          {
+            "lambda": 0.5,
+            "probe_acc": 0.315
+          },
+          {
+            "lambda": 1.0,
+            "probe_acc": 0.34
+          }
+        ]
+      }
+    ]
+  },
+  "probe_n": 200
+}

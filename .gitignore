@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+.python-version
+
+# Logs and build artifacts
+*.log
+*.blg
+*.aux
+*.out
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Claude Code
+.claude/
+
+# HuggingFace cache (if anyone runs from this dir)
+.cache/
+hf_cache/
+
+# Generated intermediates we don't want to commit
+*.tmp
+*.bak

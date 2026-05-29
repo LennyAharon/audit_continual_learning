@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this code or its findings, please cite our paper."
+title: "Audit Before You Merge: Provenance, Probing, and Continual LoRA Composition"
+authors:
+  - family-names: Aharon
+    given-names: Lenny
+    affiliation: Columbia University
+    email: lenny.aharon@columbia.edu
+  - family-names: Glazer
+    given-names: Neta
+    affiliation: Bar-Ilan University
+  - family-names: Aharon
+    given-names: Lior
+    affiliation: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Audit Before You Merge: Provenance, Probing, and Continual LoRA Composition"
+  authors:
+    - family-names: Aharon
+      given-names: Lenny
+    - family-names: Glazer
+      given-names: Neta
+    - family-names: Aharon
+      given-names: Lior
+  year: 2026
+  conference:
+    name: "ICML 2026 Workshop"

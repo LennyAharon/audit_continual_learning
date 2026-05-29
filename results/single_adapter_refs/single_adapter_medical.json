@@ -1,0 +1,8 @@
+{
+  "task": "medical",
+  "adapter_id": "yangao381/FlowerTune-Medical-Llama-3.1-8B-Instruct-PEFT",
+  "scores": {
+    "gsm8k": 0.7232752084912812
+  },
+  "full": {}
+}

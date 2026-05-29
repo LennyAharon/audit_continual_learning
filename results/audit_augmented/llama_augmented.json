@@ -1,0 +1,224 @@
+{
+  "expected_base": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+  "base_signature": {
+    "base_model_id": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+    "config_sha256": "29e4c210b0d6ac178b16b2a255a568bdb23b581e50ca1ef6a6d071dd85704e6e",
+    "shard_hashes": {
+      "model-00001-of-00004.safetensors": "2b1879f356aed350",
+      "model-00002-of-00004.safetensors": "09d433f650646834",
+      "model-00003-of-00004.safetensors": "fc1cdddd6bfa9112"
+    },
+    "signature": "e3622c38fbff0f8d",
+    "notes": []
+  },
+  "results": {
+    "kai-xu/Llama-3.1-8B-Instruct-MATH-Finetuned-LoRA": {
+      "adapter_id": "kai-xu/Llama-3.1-8B-Instruct-MATH-Finetuned-LoRA",
+      "base_model_id": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+      "tokenizer_compat": {
+        "adapter_id": "kai-xu/Llama-3.1-8B-Instruct-MATH-Finetuned-LoRA",
+        "base_model_id": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+        "targets_embeddings": false,
+        "vocab_dims_match": null,
+        "tokenizer_hashes": null,
+        "compat": true,
+        "notes": []
+      },
+      "output_divergence": {
+        "adapter_id": "kai-xu/Llama-3.1-8B-Instruct-MATH-Finetuned-LoRA",
+        "base_model_id": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+        "n_prompts": 10,
+        "kl_first_token_mean": 0.416015625,
+        "top1_agreement_rate": 0.6000000238418579,
+        "generated_text_similarity": 0.6725387414167903,
+        "interpretation": "plausible adapter effect",
+        "notes": []
+      },
+      "slot_label": "math",
+      "metadata_audit": {
+        "declared_base": "meta-llama/Llama-3.1-8B-Instruct",
+        "base_match": true,
+        "total_norm": 16.62,
+        "norm_pass": true,
+        "verdict": "PASS"
+      },
+      "augmented_verdict": "PASS"
+    },
+    "yangao381/FlowerTune-Code-Llama-3.1-8B-Instruct-PEFT": {
+      "adapter_id": "yangao381/FlowerTune-Code-Llama-3.1-8B-Instruct-PEFT",
+      "base_model_id": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+      "tokenizer_compat": {
+        "adapter_id": "yangao381/FlowerTune-Code-Llama-3.1-8B-Instruct-PEFT",
+        "base_model_id": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+        "targets_embeddings": false,
+        "vocab_dims_match": null,
+        "tokenizer_hashes": null,
+        "compat": true,
+        "notes": []
+      },
+      "output_divergence": {
+        "adapter_id": "yangao381/FlowerTune-Code-Llama-3.1-8B-Instruct-PEFT",
+        "base_model_id": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+        "n_prompts": 10,
+        "kl_first_token_mean": 0.041748046875,
+        "top1_agreement_rate": 0.800000011920929,
+        "generated_text_similarity": 0.8671220317784133,
+        "interpretation": "plausible adapter effect",
+        "notes": []
+      },
+      "slot_label": "code",
+      "metadata_audit": {
+        "declared_base": "meta-llama/Llama-3.1-8B-Instruct",
+        "base_match": true,
+        "total_norm": 1.73,
+        "norm_pass": true,
+        "verdict": "PASS"
+      },
+      "augmented_verdict": "PASS"
+    },
+    "zjudai/flowertune-general-nlp-lora-llama-3.1-8b-instruct": {
+      "adapter_id": "zjudai/flowertune-general-nlp-lora-llama-3.1-8b-instruct",
+      "base_model_id": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+      "tokenizer_compat": {
+        "adapter_id": "zjudai/flowertune-general-nlp-lora-llama-3.1-8b-instruct",
+        "base_model_id": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+        "targets_embeddings": false,
+        "vocab_dims_match": null,
+        "tokenizer_hashes": null,
+        "compat": true,
+        "notes": []
+      },
+      "output_divergence": {
+        "adapter_id": "zjudai/flowertune-general-nlp-lora-llama-3.1-8b-instruct",
+        "base_model_id": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+        "n_prompts": 10,
+        "kl_first_token_mean": 0.01373291015625,
+        "top1_agreement_rate": 0.699999988079071,
+        "generated_text_similarity": 0.8366444366838828,
+        "interpretation": "plausible adapter effect",
+        "notes": []
+      },
+      "slot_label": "general_nlp",
+      "metadata_audit": {
+        "declared_base": "meta-llama/Llama-3.1-8B-Instruct",
+        "base_match": true,
+        "total_norm": 1.067,
+        "norm_pass": true,
+        "verdict": "PASS"
+      },
+      "augmented_verdict": "PASS"
+    },
+    "yangao381/FlowerTune-Medical-Llama-3.1-8B-Instruct-PEFT": {
+      "adapter_id": "yangao381/FlowerTune-Medical-Llama-3.1-8B-Instruct-PEFT",
+      "base_model_id": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+      "tokenizer_compat": {
+        "adapter_id": "yangao381/FlowerTune-Medical-Llama-3.1-8B-Instruct-PEFT",
+        "base_model_id": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+        "targets_embeddings": false,
+        "vocab_dims_match": null,
+        "tokenizer_hashes": null,
+        "compat": true,
+        "notes": []
+      },
+      "output_divergence": {
+        "adapter_id": "yangao381/FlowerTune-Medical-Llama-3.1-8B-Instruct-PEFT",
+        "base_model_id": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+        "n_prompts": 10,
+        "kl_first_token_mean": 0.05712890625,
+        "top1_agreement_rate": 0.6000000238418579,
+        "generated_text_similarity": 0.8228221919563176,
+        "interpretation": "plausible adapter effect",
+        "notes": []
+      },
+      "slot_label": "medical",
+      "metadata_audit": {
+        "declared_base": "meta-llama/Llama-3.1-8B-Instruct",
+        "base_match": true,
+        "total_norm": 1.554,
+        "norm_pass": true,
+        "verdict": "PASS"
+      },
+      "augmented_verdict": "PASS"
+    },
+    "TianJun1/llama3.1-8b-code-reflector-lora": {
+      "adapter_id": "TianJun1/llama3.1-8b-code-reflector-lora",
+      "base_model_id": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+      "tokenizer_compat": {
+        "adapter_id": "TianJun1/llama3.1-8b-code-reflector-lora",
+        "base_model_id": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+        "targets_embeddings": false,
+        "vocab_dims_match": null,
+        "tokenizer_hashes": {
+          "adapter": {
+            "tokenizer.json": "6b9e4e7fb171f92f",
+            "tokenizer_config.json": "a6c116761af9f371"
+          },
+          "base": {
+            "tokenizer.json": "79e3e522635f3171",
+            "tokenizer_config.json": "24e8a6dc2547164b"
+          },
+          "match": {
+            "tokenizer.json": false,
+            "tokenizer_config.json": false
+          }
+        },
+        "compat": "warn",
+        "notes": [
+          "adapter ships tokenizer files that differ from base",
+          "tokenizer-file mismatch \u2014 WARN (may still work)"
+        ]
+      },
+      "output_divergence": {
+        "adapter_id": "TianJun1/llama3.1-8b-code-reflector-lora",
+        "base_model_id": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+        "n_prompts": 10,
+        "kl_first_token_mean": -0.00072479248046875,
+        "top1_agreement_rate": 1.0,
+        "generated_text_similarity": 1.0,
+        "interpretation": "no-op (adapter has negligible effect)",
+        "notes": []
+      },
+      "slot_label": "code-defective-norm",
+      "metadata_audit": {
+        "declared_base": "meta-llama/Llama-3.1-8B-Instruct",
+        "base_match": true,
+        "total_norm": 0.016,
+        "norm_pass": false,
+        "verdict": "FAIL"
+      },
+      "augmented_verdict": "FAIL (content: content_noop)"
+    },
+    "Blackroot/Llama-3-8B-Abomination-LORA": {
+      "adapter_id": "Blackroot/Llama-3-8B-Abomination-LORA",
+      "base_model_id": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+      "tokenizer_compat": {
+        "adapter_id": "Blackroot/Llama-3-8B-Abomination-LORA",
+        "base_model_id": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+        "targets_embeddings": false,
+        "vocab_dims_match": null,
+        "tokenizer_hashes": null,
+        "compat": true,
+        "notes": []
+      },
+      "output_divergence": {
+        "adapter_id": "Blackroot/Llama-3-8B-Abomination-LORA",
+        "base_model_id": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+        "n_prompts": 10,
+        "kl_first_token_mean": 0.1015625,
+        "top1_agreement_rate": 0.800000011920929,
+        "generated_text_similarity": 0.7481803215626746,
+        "interpretation": "plausible adapter effect",
+        "notes": []
+      },
+      "slot_label": "creative-wrong-base",
+      "metadata_audit": {
+        "declared_base": "Llama-3-8b-Instruct",
+        "base_match": false,
+        "total_norm": 46.091,
+        "norm_pass": true,
+        "verdict": "FAIL"
+      },
+      "augmented_verdict": "FAIL (metadata: FAIL)"
+    }
+  }
+}

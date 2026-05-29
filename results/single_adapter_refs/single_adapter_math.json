@@ -1,0 +1,15 @@
+{
+  "task": "math",
+  "adapter_id": "kai-xu/Llama-3.1-8B-Instruct-MATH-Finetuned-LoRA",
+  "scores": {
+    "math500": 0.164,
+    "gsm8k": 0.6595905989385898
+  },
+  "full": {
+    "math500": {
+      "alias": "hendrycks_math500",
+      "exact_match,none": 0.164,
+      "exact_match_stderr,none": 0.016575811142446696
+    }
+  }
+}

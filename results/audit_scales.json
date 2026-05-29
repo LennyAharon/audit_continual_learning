@@ -1,0 +1,1490 @@
+{
+  "n_per_family": 40,
+  "seed": 1234,
+  "families": {
+    "llama32_1b": {
+      "family": "llama32_1b",
+      "expected_base": "meta-llama/Llama-3.2-1B-Instruct",
+      "queries": [
+        "lora llama-3.2-1b",
+        "lora Llama-3.2-1B-Instruct",
+        "peft llama 3.2 1b"
+      ],
+      "seed": 1234,
+      "search_total": 162,
+      "fresh_total": 162,
+      "n_audited": 40,
+      "n_loadable": 26,
+      "n_pass": 4,
+      "n_fail": 22,
+      "n_base_mismatch": 21,
+      "n_norm_fail": 5,
+      "n_near_zero": 2,
+      "rates_pct": {
+        "loadable": 65.0,
+        "pass": 10.0,
+        "fail": 55.0,
+        "base_mismatch_of_loadable": 80.76923076923077,
+        "norm_fail_of_loadable": 19.23076923076923,
+        "near_zero_of_loadable": 7.6923076923076925
+      },
+      "results": [
+        {
+          "id": "booydar/RMT-Llama-3.2-1B-Instruct-4x1024-mem16-lora-babilong-qa1-5",
+          "error": "config load: Can't find 'adapter_config.json' at 'booydar/RMT-Llama-3.2-1B-Instruct-4x1024-mem16-lora-babilong-qa1-5'"
+        },
+        {
+          "id": "makcedward/Llama-3.2-1B-Instruct-LoRA-Adapter_small",
+          "declared_base": "meta-llama/Llama-3.2-1B-Instruct",
+          "rank": 1,
+          "alpha": 4,
+          "scaling": 4.0,
+          "n_layers": 32,
+          "total_norm": 1.938,
+          "base_match": true,
+          "norm_pass": true,
+          "verdict": "PASS",
+          "fail_reasons": []
+        },
+        {
+          "id": "wahdie11/Llama-3.2-1B-Instruct-bnb-4bit-codex-lora",
+          "declared_base": "unsloth/Llama-3.2-1B-Instruct-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 112,
+          "total_norm": 8.201,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Llama-3.2-1B-Instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "yangao381/FlowerTune-NLP-Llama-3.2-1B-PEFT",
+          "declared_base": "meta-llama/Llama-3.2-1B",
+          "rank": 32,
+          "alpha": 64,
+          "scaling": 2.0,
+          "n_layers": 32,
+          "total_norm": 0.997,
+          "base_match": false,
+          "norm_pass": false,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=meta-llama/Llama-3.2-1B)",
+            "norm 0.997 < 1.0"
+          ]
+        },
+        {
+          "id": "genne/lora_FA2_Llama-3.2-1B-CyberFrog_nqa-sft-dataset",
+          "error": "config load: Can't find 'adapter_config.json' at 'genne/lora_FA2_Llama-3.2-1B-CyberFrog_nqa-sft-dataset'"
+        },
+        {
+          "id": "S21348/llama-3.2-1b-lora",
+          "declared_base": "meta-llama/Llama-3.2-1B-Instruct",
+          "rank": 8,
+          "alpha": 16,
+          "scaling": 2.0,
+          "n_layers": 96,
+          "total_norm": 6.244,
+          "base_match": true,
+          "norm_pass": true,
+          "verdict": "PASS",
+          "fail_reasons": []
+        },
+        {
+          "id": "jayavibhav/Llama3.2_1B_Cot_LoRa",
+          "declared_base": "unsloth/llama-3.2-1b-instruct-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 112,
+          "total_norm": 2.566,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/llama-3.2-1b-instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "DevBM/llama-3.2-1b-finetuned-peft-medical",
+          "declared_base": "meta-llama/Llama-3.2-1B",
+          "rank": 16,
+          "alpha": 32,
+          "scaling": 2.0,
+          "n_layers": 32,
+          "total_norm": 3.488,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=meta-llama/Llama-3.2-1B)"
+          ]
+        },
+        {
+          "id": "noaebbot/insights_llama3.2_1B_lora",
+          "declared_base": "unsloth/llama-3.2-1b-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 112,
+          "total_norm": 4.285,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/llama-3.2-1b-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "juliaturc/llama-3.2-1b-instruct-gms8k-sft-lora-8shot-no-prompt-masking",
+          "error": "config load: Can't find 'adapter_config.json' at 'juliaturc/llama-3.2-1b-instruct-gms8k-sft-lora-8shot-no-prompt-masking'"
+        },
+        {
+          "id": "lucaelin/llama-3.2-1b-instruct-cn-v2-lora",
+          "declared_base": "unsloth/llama-3.2-1b-instruct",
+          "rank": 32,
+          "alpha": 8,
+          "scaling": 1.414,
+          "n_layers": 112,
+          "total_norm": 1.725,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/llama-3.2-1b-instruct)"
+          ]
+        },
+        {
+          "id": "kimsan0622/Llama-3.2-1B-Code-Knowledge-Value-Eval-lora",
+          "declared_base": "meta-llama/Llama-3.2-1B",
+          "rank": 8,
+          "alpha": 32,
+          "scaling": 4.0,
+          "n_layers": 32,
+          "total_norm": 20.707,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=meta-llama/Llama-3.2-1B)"
+          ]
+        },
+        {
+          "id": "HillPhelmuth/Llama-3.2-1B-Instruct-Chess-Lora",
+          "declared_base": "unsloth/llama-3.2-1b-instruct-unsloth-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 112,
+          "total_norm": 2.576,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/llama-3.2-1b-instruct-unsloth-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "ussipan/SipanGPT-0.1-Llama-3.2-1B-lora",
+          "declared_base": "unsloth/llama-3.2-1b-instruct-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 112,
+          "total_norm": 4.071,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/llama-3.2-1b-instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "Chryslerx10/Llama-3.2-1B-finetuned-generalQA-peft-4bit",
+          "declared_base": "meta-llama/Llama-3.2-1B",
+          "rank": 8,
+          "alpha": 16,
+          "scaling": 2.0,
+          "n_layers": 32,
+          "total_norm": 2.689,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=meta-llama/Llama-3.2-1B)"
+          ]
+        },
+        {
+          "id": "Binodt/Llama-3.2-1B-Instruct-bnb-4bit_lora4sleepcoach",
+          "declared_base": "unsloth/Llama-3.2-1B-Instruct-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 112,
+          "total_norm": 3.56,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Llama-3.2-1B-Instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "reby-equip/Llama-3.2-1B-sft-lora-ultrachat",
+          "error": "config load: Can't find 'adapter_config.json' at 'reby-equip/Llama-3.2-1B-sft-lora-ultrachat'"
+        },
+        {
+          "id": "mikeogezi/data_wp_output_gpt_4o_mini_llama-3.2-1b-instruct_lora_16_sample_500_bsz_8",
+          "declared_base": "/projects/compling/mogezi/unsloth/Llama-3.2-1B-Instruct",
+          "rank": 16,
+          "alpha": 16.0,
+          "scaling": 1.0,
+          "n_layers": 112,
+          "total_norm": 0.878,
+          "base_match": false,
+          "norm_pass": false,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=/projects/compling/mogezi/unsloth/Llama-3.2-1B-Instruct)",
+            "norm 0.878 < 1.0"
+          ]
+        },
+        {
+          "id": "Aelien/Llama-3.2-1B-Instruct-lora",
+          "error": "config load: Can't find 'adapter_config.json' at 'Aelien/Llama-3.2-1B-Instruct-lora'"
+        },
+        {
+          "id": "yangao381/FlowerTune-Medical-Llama-3.2-1B-Instruct-PEFT",
+          "declared_base": "meta-llama/Llama-3.2-1B-Instruct",
+          "rank": 32,
+          "alpha": 64,
+          "scaling": 2.0,
+          "n_layers": 32,
+          "total_norm": 0.967,
+          "base_match": true,
+          "norm_pass": false,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "norm 0.967 < 1.0"
+          ]
+        },
+        {
+          "id": "alperiox/llama3.2-1b-4bit-lora-sentiment-analysis",
+          "declared_base": "unsloth/llama-3.2-1b-instruct-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 112,
+          "total_norm": 4.749,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/llama-3.2-1b-instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "juliaturc/llama-3.2-1b-instruct-gms8k-sft-lora-8shot-no-prompt-masking-merged",
+          "error": "config load: Can't find 'adapter_config.json' at 'juliaturc/llama-3.2-1b-instruct-gms8k-sft-lora-8shot-no-prompt-masking-merged'"
+        },
+        {
+          "id": "booydar/RMT-Llama-3.2-1B-Instruct-2x1024-mem16-lora-babilong-qa1-5_ct-v3",
+          "error": "config load: Can't find 'adapter_config.json' at 'booydar/RMT-Llama-3.2-1B-Instruct-2x1024-mem16-lora-babilong-qa1-5_ct-v3'"
+        },
+        {
+          "id": "bunnycore/LLama-3.2-1B-General-lora_model-F16-GGUF",
+          "error": "config load: Can't find 'adapter_config.json' at 'bunnycore/LLama-3.2-1B-General-lora_model-F16-GGUF'"
+        },
+        {
+          "id": "Cchaewon/lora-llama-3.2-1B-Instruct",
+          "declared_base": "meta-llama/Llama-3.2-1B-Instruct",
+          "rank": 8,
+          "alpha": 16,
+          "scaling": 2.0,
+          "n_layers": 112,
+          "total_norm": 9.84,
+          "base_match": true,
+          "norm_pass": true,
+          "verdict": "PASS",
+          "fail_reasons": []
+        },
+        {
+          "id": "Chryslerx10/Llama-3.2-1B-finetuned-amazon-reviews-QA-peft-4bit",
+          "declared_base": "meta-llama/Llama-3.2-1B",
+          "rank": 8,
+          "alpha": 16,
+          "scaling": 2.0,
+          "n_layers": 32,
+          "total_norm": 4.161,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=meta-llama/Llama-3.2-1B)"
+          ]
+        },
+        {
+          "id": "asif00/Llama-3.2-1B-bnb-4bit-finetuned-lora",
+          "declared_base": "unsloth/llama-3.2-1b",
+          "rank": 32,
+          "alpha": 32,
+          "scaling": 1.0,
+          "n_layers": 112,
+          "total_norm": 11.337,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/llama-3.2-1b)"
+          ]
+        },
+        {
+          "id": "jbaron34/llama-3.2-1B-enricher-lora",
+          "declared_base": "unsloth/Llama-3.2-1B-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 112,
+          "total_norm": 12.925,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Llama-3.2-1B-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "blattimer/Llama-3.2-1B-Instruct-LoRA-v1",
+          "declared_base": "blattimer/Llama-3.2-1B-Instruct",
+          "rank": 16,
+          "alpha": 32,
+          "scaling": 2.0,
+          "n_layers": 113,
+          "total_norm": 0.0,
+          "base_match": false,
+          "norm_pass": false,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=blattimer/Llama-3.2-1B-Instruct)",
+            "norm 0.0 < 1.0"
+          ]
+        },
+        {
+          "id": "yuntaozh/1B_finetuned_llama3.2_LoRA_hellaswag",
+          "declared_base": "unsloth/Llama-3.2-1B-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 4.0,
+          "n_layers": 112,
+          "total_norm": 7.843,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Llama-3.2-1B-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "makcedward/Llama-3.2-1B-Instruct-LoRA-Merged_small",
+          "error": "config load: Can't find 'adapter_config.json' at 'makcedward/Llama-3.2-1B-Instruct-LoRA-Merged_small'"
+        },
+        {
+          "id": "makcedward/Llama-3.2-1B-Instruct-LoRA-Merged_large",
+          "error": "config load: Can't find 'adapter_config.json' at 'makcedward/Llama-3.2-1B-Instruct-LoRA-Merged_large'"
+        },
+        {
+          "id": "booydar/RMT-Llama-3.2-1B-Instruct-2x1024-mem16-lora-babilong-qa1-5_ct-v2",
+          "error": "config load: Can't find 'adapter_config.json' at 'booydar/RMT-Llama-3.2-1B-Instruct-2x1024-mem16-lora-babilong-qa1-5_ct-v2'"
+        },
+        {
+          "id": "xw17/Llama-3.2-1B-Instruct_finetuned_1_optimal_lora",
+          "declared_base": "meta-llama/Llama-3.2-1B-Instruct",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 32,
+          "total_norm": 7.374,
+          "base_match": true,
+          "norm_pass": true,
+          "verdict": "PASS",
+          "fail_reasons": []
+        },
+        {
+          "id": "harlouci/Llama-3.2-1B-wikipedia-eu-lora",
+          "declared_base": "unsloth/Llama-3.2-1B-bnb-4bit",
+          "rank": 128,
+          "alpha": 32,
+          "scaling": 2.828,
+          "n_layers": 112,
+          "total_norm": 4.82,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Llama-3.2-1B-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "makcedward/Llama-3.2-1B-Instruct-LoRA-Merged_wo_tokenizer",
+          "error": "config load: Can't find 'adapter_config.json' at 'makcedward/Llama-3.2-1B-Instruct-LoRA-Merged_wo_tokenizer'"
+        },
+        {
+          "id": "RichardErkhov/coreystout_-_llama-3.2-1b-instruct-lora-awq",
+          "error": "config load: Can't find 'adapter_config.json' at 'RichardErkhov/coreystout_-_llama-3.2-1b-instruct-lora-awq'"
+        },
+        {
+          "id": "yangao381/FlowerTune-Code-Llama-3.2-1B-PEFT",
+          "declared_base": "meta-llama/Llama-3.2-1B",
+          "rank": 32,
+          "alpha": 64,
+          "scaling": 2.0,
+          "n_layers": 32,
+          "total_norm": 1.052,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=meta-llama/Llama-3.2-1B)"
+          ]
+        },
+        {
+          "id": "jiya2/lorar16_OETRead_unsloth_Llama-3.2-1B-bnb-4bit",
+          "declared_base": "unsloth/Llama-3.2-1B-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 0,
+          "total_norm": 0.0,
+          "base_match": false,
+          "norm_pass": false,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Llama-3.2-1B-bnb-4bit)",
+            "norm 0.0 < 1.0"
+          ]
+        },
+        {
+          "id": "Shabdobhedi/Arabic-Law-Llama-3.2-1B-Instruct-bnb-4bit-LoRA",
+          "error": "config load: Can't find 'adapter_config.json' at 'Shabdobhedi/Arabic-Law-Llama-3.2-1B-Instruct-bnb-4bit-LoRA'"
+        }
+      ]
+    },
+    "llama32_3b": {
+      "family": "llama32_3b",
+      "expected_base": "meta-llama/Llama-3.2-3B-Instruct",
+      "queries": [
+        "lora llama-3.2-3b",
+        "lora Llama-3.2-3B-Instruct",
+        "peft llama 3.2 3b"
+      ],
+      "seed": 1234,
+      "search_total": 160,
+      "fresh_total": 160,
+      "n_audited": 40,
+      "n_loadable": 27,
+      "n_pass": 5,
+      "n_fail": 22,
+      "n_base_mismatch": 22,
+      "n_norm_fail": 0,
+      "n_near_zero": 0,
+      "rates_pct": {
+        "loadable": 67.5,
+        "pass": 12.5,
+        "fail": 55.0,
+        "base_mismatch_of_loadable": 81.48148148148148,
+        "norm_fail_of_loadable": 0.0,
+        "near_zero_of_loadable": 0.0
+      },
+      "results": [
+        {
+          "id": "MihirKapile/Hindi-Law-Meta-Llama-3.2-3B-LoRA",
+          "declared_base": "unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 196,
+          "total_norm": 14.84,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Llama-3.2-3B-Instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "lucaelin/llama-3.2-3b-instruct-cn-v2-lora",
+          "declared_base": "unsloth/llama-3.2-3b-instruct",
+          "rank": 32,
+          "alpha": 8,
+          "scaling": 1.414,
+          "n_layers": 196,
+          "total_norm": 3.801,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/llama-3.2-3b-instruct)"
+          ]
+        },
+        {
+          "id": "NanoMatriX/llama-3.2-3b-peft-lora-merged-unloaded",
+          "error": "config load: Can't find 'adapter_config.json' at 'NanoMatriX/llama-3.2-3b-peft-lora-merged-unloaded'"
+        },
+        {
+          "id": "rightpunch/Llama-3.2-3B-Instruct_PEFT_GPTQ",
+          "error": "config load: Can't find 'adapter_config.json' at 'rightpunch/Llama-3.2-3B-Instruct_PEFT_GPTQ'"
+        },
+        {
+          "id": "PurpleAILAB/SQL_Llama-3.2-3B-Instruct-uncensored_final-LoRA",
+          "declared_base": "chuanli11/Llama-3.2-3B-Instruct-uncensored",
+          "rank": 16,
+          "alpha": 32,
+          "scaling": 2.0,
+          "n_layers": 196,
+          "total_norm": 10.545,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=chuanli11/Llama-3.2-3B-Instruct-uncensored)"
+          ]
+        },
+        {
+          "id": "lucaelin/llama-3.2-3b-instruct-fc-lora",
+          "declared_base": "unsloth/Llama-3.2-3B-Instruct",
+          "rank": 32,
+          "alpha": 16,
+          "scaling": 2.828,
+          "n_layers": 196,
+          "total_norm": 19.665,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Llama-3.2-3B-Instruct)"
+          ]
+        },
+        {
+          "id": "PurpleAILAB/SQLi-instruction-Llama3.2-3B-lora",
+          "declared_base": "chuanli11/Llama-3.2-3B-Instruct-uncensored",
+          "rank": 128,
+          "alpha": 256,
+          "scaling": 2.0,
+          "n_layers": 196,
+          "total_norm": 18.703,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=chuanli11/Llama-3.2-3B-Instruct-uncensored)"
+          ]
+        },
+        {
+          "id": "EmTpro01/Llama-3.2-3B-peft",
+          "declared_base": "unsloth/llama-3.2-3b-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 196,
+          "total_norm": 13.992,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/llama-3.2-3b-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "Bharatdeep-H/portfolio-query-llama-3.2-3b-v2-lora",
+          "declared_base": "unsloth/llama-3.2-3b-instruct-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 196,
+          "total_norm": 4.237,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/llama-3.2-3b-instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "Speeeed/Llama-3.2-3B-instruct-boolq-lora",
+          "declared_base": "meta-llama/Llama-3.2-3B-Instruct",
+          "rank": 16,
+          "alpha": 32,
+          "scaling": 2.0,
+          "n_layers": 168,
+          "total_norm": 1.346,
+          "base_match": true,
+          "norm_pass": true,
+          "verdict": "PASS",
+          "fail_reasons": []
+        },
+        {
+          "id": "Enssel/llama3.2-3b-test-lora",
+          "declared_base": "Enssel/Llama-3.2-3B-Instruct_with_specialtokens",
+          "rank": 64,
+          "alpha": 128,
+          "scaling": 2.0,
+          "n_layers": 112,
+          "total_norm": 7.701,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=Enssel/Llama-3.2-3B-Instruct_with_specialtokens)"
+          ]
+        },
+        {
+          "id": "kholiavko/reception-llama-3.2-3b-test-2-lora",
+          "declared_base": "unsloth/llama-3.2-3b-instruct-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 196,
+          "total_norm": 21.812,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/llama-3.2-3b-instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "RichardErkhov/saqada_-_Llama-3.2-3B-Instruct-16bit-merged_lora_adapters-MOV-gguf",
+          "error": "config load: Can't find 'adapter_config.json' at 'RichardErkhov/saqada_-_Llama-3.2-3B-Instruct-16bit-merged_lora_adapters-MOV-gguf'"
+        },
+        {
+          "id": "aduqueLSI/Llama-3.2-3B-tiny-shakespeare-lora",
+          "declared_base": "unsloth/Llama-3.2-3B-bnb-4bit",
+          "rank": 128,
+          "alpha": 32,
+          "scaling": 2.828,
+          "n_layers": 196,
+          "total_norm": 2.758,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Llama-3.2-3B-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "xw17/Llama-3.2-3B-Instruct_finetuned_2_lora",
+          "error": "config load: Can't find 'adapter_config.json' at 'xw17/Llama-3.2-3B-Instruct_finetuned_2_lora'"
+        },
+        {
+          "id": "jusKnows/Llama-3.2-3B-test-lora-ultrafit-complete-q4_k_m-gguf",
+          "error": "config load: Can't find 'adapter_config.json' at 'jusKnows/Llama-3.2-3B-test-lora-ultrafit-complete-q4_k_m-gguf'"
+        },
+        {
+          "id": "tensorblock/llama-3.2-3b-instruct-lora-GGUF",
+          "error": "config load: Can't find 'adapter_config.json' at 'tensorblock/llama-3.2-3b-instruct-lora-GGUF'"
+        },
+        {
+          "id": "vislupus/bulgarian-joke-master-Llama-3.2-3B-Instruct-bnb-4bit-LoRA",
+          "declared_base": "unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 4.0,
+          "n_layers": 196,
+          "total_norm": 86.342,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Llama-3.2-3B-Instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "mattarad/Llama-3.2-3B-Instruct-LoRa-mqc-Sentiment_Analysis",
+          "error": "config load: Can't find 'adapter_config.json' at 'mattarad/Llama-3.2-3B-Instruct-LoRa-mqc-Sentiment_Analysis'"
+        },
+        {
+          "id": "yangao381/FlowerTune-Code-Llama-3.2-3B-PEFT",
+          "declared_base": "meta-llama/Llama-3.2-3B",
+          "rank": 32,
+          "alpha": 64,
+          "scaling": 2.0,
+          "n_layers": 56,
+          "total_norm": 1.604,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=meta-llama/Llama-3.2-3B)"
+          ]
+        },
+        {
+          "id": "PurpleAILAB/SQL_llama3.2-3b_lora_model-Q4_K_M-GGUF",
+          "error": "config load: Can't find 'adapter_config.json' at 'PurpleAILAB/SQL_llama3.2-3b_lora_model-Q4_K_M-GGUF'"
+        },
+        {
+          "id": "AhmedBou/Arabic-Law-Meta-Llama-3.2-3B-LoRA",
+          "declared_base": "unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 196,
+          "total_norm": 11.36,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Llama-3.2-3B-Instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "gowtham28/lora_model_llama3.2_3b_instruct",
+          "declared_base": "unsloth/llama-3.2-3b-instruct-bnb-4bit",
+          "rank": 128,
+          "alpha": 16,
+          "scaling": 0.125,
+          "n_layers": 196,
+          "total_norm": 2.441,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/llama-3.2-3b-instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "rpoves/Llama-3.2-3B-tiny-stories-lora",
+          "declared_base": "unsloth/Llama-3.2-3B-bnb-4bit",
+          "rank": 128,
+          "alpha": 32,
+          "scaling": 2.828,
+          "n_layers": 196,
+          "total_norm": 2.564,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Llama-3.2-3B-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "Speeeed/Llama-3.2-3B-instruct-mrpc-lora",
+          "declared_base": "meta-llama/Llama-3.2-3B-Instruct",
+          "rank": 16,
+          "alpha": 32,
+          "scaling": 2.0,
+          "n_layers": 168,
+          "total_norm": 9.531,
+          "base_match": true,
+          "norm_pass": true,
+          "verdict": "PASS",
+          "fail_reasons": []
+        },
+        {
+          "id": "xw17/Llama-3.2-3B-Instruct_finetuned_3_lora",
+          "error": "config load: Can't find 'adapter_config.json' at 'xw17/Llama-3.2-3B-Instruct_finetuned_3_lora'"
+        },
+        {
+          "id": "Speeeed/Llama-3.2-3B-instruct-wsc-lora",
+          "declared_base": "meta-llama/Llama-3.2-3B-Instruct",
+          "rank": 16,
+          "alpha": 32,
+          "scaling": 2.0,
+          "n_layers": 168,
+          "total_norm": 6.727,
+          "base_match": true,
+          "norm_pass": true,
+          "verdict": "PASS",
+          "fail_reasons": []
+        },
+        {
+          "id": "jusKnows/Llama-3.2-3B-test-lora-ultrafit",
+          "declared_base": "unsloth/Llama-3.2-3B-bnb-4bit",
+          "rank": 128,
+          "alpha": 32,
+          "scaling": 2.828,
+          "n_layers": 196,
+          "total_norm": 10.331,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Llama-3.2-3B-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "Arraying/llama-3.2-3b-instruct-lora-1poch_merged16b",
+          "error": "config load: Can't find 'adapter_config.json' at 'Arraying/llama-3.2-3b-instruct-lora-1poch_merged16b'"
+        },
+        {
+          "id": "saqada/Llama-3.2-3B-with-16bit-merged_lora_adapters-MOV",
+          "error": "config load: Can't find 'adapter_config.json' at 'saqada/Llama-3.2-3B-with-16bit-merged_lora_adapters-MOV'"
+        },
+        {
+          "id": "kimsan0622/Llama-3.2-3B-Code-Knowledge-Value-Eval-lora",
+          "declared_base": "meta-llama/Llama-3.2-3B",
+          "rank": 8,
+          "alpha": 32,
+          "scaling": 4.0,
+          "n_layers": 56,
+          "total_norm": 40.032,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=meta-llama/Llama-3.2-3B)"
+          ]
+        },
+        {
+          "id": "Speeeed/Llama-3.2-3B-instruct-aeslc-lora",
+          "declared_base": "meta-llama/Llama-3.2-3B-Instruct",
+          "rank": 16,
+          "alpha": 32,
+          "scaling": 2.0,
+          "n_layers": 168,
+          "total_norm": 1.931,
+          "base_match": true,
+          "norm_pass": true,
+          "verdict": "PASS",
+          "fail_reasons": []
+        },
+        {
+          "id": "brktnmn/lora_Llama-3.2-3B-Instruct-bnb-4bit_gguf",
+          "error": "config load: Can't find 'adapter_config.json' at 'brktnmn/lora_Llama-3.2-3B-Instruct-bnb-4bit_gguf'"
+        },
+        {
+          "id": "lucaelin/llama-3.2-3b-instruct-cn-lora",
+          "declared_base": "unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+          "rank": 32,
+          "alpha": 8,
+          "scaling": 1.414,
+          "n_layers": 196,
+          "total_norm": 4.141,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Llama-3.2-3B-Instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "inigomartinez/Llama-3.2-3B-tiny-shakespeare-lora",
+          "declared_base": "unsloth/Llama-3.2-3B-bnb-4bit",
+          "rank": 128,
+          "alpha": 32,
+          "scaling": 2.828,
+          "n_layers": 196,
+          "total_norm": 2.758,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Llama-3.2-3B-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "xw17/Llama-3.2-3B-Instruct_finetuned_1_default_lora",
+          "declared_base": "Models/Llama-3.2-3B-Instruct",
+          "rank": 8,
+          "alpha": 16,
+          "scaling": 2.0,
+          "n_layers": 56,
+          "total_norm": 5.39,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=Models/Llama-3.2-3B-Instruct)"
+          ]
+        },
+        {
+          "id": "bunnycore/Llama-3.2-3B-Code-lora_model",
+          "declared_base": "unsloth/llama-3.2-3b-instruct-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 196,
+          "total_norm": 2.716,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/llama-3.2-3b-instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "NanoMatriX/llama-3.2-3b-peft-lora-merged-unloaded-4bit-gptq",
+          "error": "config load: Can't find 'adapter_config.json' at 'NanoMatriX/llama-3.2-3b-peft-lora-merged-unloaded-4bit-gptq'"
+        },
+        {
+          "id": "ileturia/Llama-3.2-3B-tiny-stories-lora",
+          "declared_base": "unsloth/Llama-3.2-3B-bnb-4bit",
+          "rank": 128,
+          "alpha": 32,
+          "scaling": 2.828,
+          "n_layers": 196,
+          "total_norm": 2.394,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Llama-3.2-3B-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "Speeeed/Llama-3.2-3B-instruct-qqp-lora",
+          "declared_base": "meta-llama/Llama-3.2-3B-Instruct",
+          "rank": 16,
+          "alpha": 32,
+          "scaling": 2.0,
+          "n_layers": 168,
+          "total_norm": 6.369,
+          "base_match": true,
+          "norm_pass": true,
+          "verdict": "PASS",
+          "fail_reasons": []
+        }
+      ]
+    },
+    "qwen25_7b": {
+      "family": "qwen25_7b",
+      "expected_base": "Qwen/Qwen2.5-7B-Instruct",
+      "queries": [
+        "lora qwen2.5-7b",
+        "lora Qwen2.5-7B-Instruct",
+        "peft qwen2.5 7b"
+      ],
+      "seed": 1234,
+      "search_total": 141,
+      "fresh_total": 141,
+      "n_audited": 40,
+      "n_loadable": 32,
+      "n_pass": 3,
+      "n_fail": 29,
+      "n_base_mismatch": 29,
+      "n_norm_fail": 2,
+      "n_near_zero": 1,
+      "rates_pct": {
+        "loadable": 80.0,
+        "pass": 7.5,
+        "fail": 72.5,
+        "base_mismatch_of_loadable": 90.625,
+        "norm_fail_of_loadable": 6.25,
+        "near_zero_of_loadable": 3.125
+      },
+      "results": [
+        {
+          "id": "ggml-org/LoRA-Human-Like-Qwen2.5-7B-Instruct-F16-GGUF",
+          "error": "config load: Can't find 'adapter_config.json' at 'ggml-org/LoRA-Human-Like-Qwen2.5-7B-Instruct-F16-GGUF'"
+        },
+        {
+          "id": "yangao381/FlowerTune-Medical-Qwen2.5-7B-Instruct-PEFT",
+          "declared_base": "Qwen/Qwen2.5-7B-Instruct",
+          "rank": 32,
+          "alpha": 64,
+          "scaling": 2.0,
+          "n_layers": 56,
+          "total_norm": 1.777,
+          "base_match": true,
+          "norm_pass": true,
+          "verdict": "PASS",
+          "fail_reasons": []
+        },
+        {
+          "id": "nicosoft/Qwen2.5-7B-Instruct-lora-r64ep",
+          "declared_base": "unsloth/qwen2.5-7b-instruct-bnb-4bit",
+          "rank": 64,
+          "alpha": 64,
+          "scaling": 1.0,
+          "n_layers": 196,
+          "total_norm": 11.427,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/qwen2.5-7b-instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "ferdinandjasong/SuperCoder-7B-Qwen2.5-peft",
+          "declared_base": "unsloth/Qwen2.5-Coder-7B-Instruct",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 196,
+          "total_norm": 77.44,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Qwen2.5-Coder-7B-Instruct)"
+          ]
+        },
+        {
+          "id": "TheMachinist/Qwen2.5-7B-Instruct-v1-lora",
+          "declared_base": "unsloth/Qwen2.5-7B",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 196,
+          "total_norm": 4.481,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Qwen2.5-7B)"
+          ]
+        },
+        {
+          "id": "ardavey/qwen2.5-7b-instruct-lora_model",
+          "error": "config load: Can't find 'adapter_config.json' at 'ardavey/qwen2.5-7b-instruct-lora_model'"
+        },
+        {
+          "id": "daitavan/Qwen2.5-7B-Instruct_lora_unsloth_law_adapter",
+          "declared_base": "Qwen2.5-7B-Instruct",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 196,
+          "total_norm": 106.532,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=Qwen2.5-7B-Instruct)"
+          ]
+        },
+        {
+          "id": "nicosoft/Qwen2.5-7B-Instruct-lora-r512ep",
+          "declared_base": "unsloth/qwen2.5-7b-instruct-bnb-4bit",
+          "rank": 512,
+          "alpha": 512,
+          "scaling": 1.0,
+          "n_layers": 196,
+          "total_norm": 23.781,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/qwen2.5-7b-instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "nicosoft/Qwen2.5-7B-Instruct-lora-r256ep",
+          "declared_base": "unsloth/qwen2.5-7b-instruct-bnb-4bit",
+          "rank": 256,
+          "alpha": 256,
+          "scaling": 1.0,
+          "n_layers": 196,
+          "total_norm": 18.891,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/qwen2.5-7b-instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "sourya/Qwen2.5-7B-Instruct-Open-R1-Distill-bespoke17k-PEFT",
+          "error": "config load: Can't find 'adapter_config.json' at 'sourya/Qwen2.5-7B-Instruct-Open-R1-Distill-bespoke17k-PEFT'"
+        },
+        {
+          "id": "masrur/qwen2.5-7b-4bit-lora-finetuned-bengali",
+          "error": "config load: Can't find 'adapter_config.json' at 'masrur/qwen2.5-7b-4bit-lora-finetuned-bengali'"
+        },
+        {
+          "id": "JonhTheTrueKingoftheNorth/peft-codeqa-Qwen2.5-7b",
+          "declared_base": "Qwen/Qwen2.5-Coder-7B-Instruct",
+          "rank": 256,
+          "alpha": 128,
+          "scaling": 0.5,
+          "n_layers": 196,
+          "total_norm": 1.364,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=Qwen/Qwen2.5-Coder-7B-Instruct)"
+          ]
+        },
+        {
+          "id": "GyeongjuLee/lora_model-Qwen2.5-7B-Instruct-bnb-4bit_EMH-emotional-reactions_1",
+          "declared_base": "unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 196,
+          "total_norm": 0.054,
+          "base_match": false,
+          "norm_pass": false,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit)",
+            "norm 0.054 < 1.0"
+          ]
+        },
+        {
+          "id": "eddychu/Qwen2.5-Math-7B-Instruct-lora",
+          "declared_base": "unsloth/qwen2.5-math-7b-instruct-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 196,
+          "total_norm": 8.109,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/qwen2.5-math-7b-instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "nicosoft/Qwen2.5-7B-Instruct-lora-r256",
+          "declared_base": "unsloth/qwen2.5-7b-instruct-bnb-4bit",
+          "rank": 256,
+          "alpha": 256,
+          "scaling": 1.0,
+          "n_layers": 196,
+          "total_norm": 18.944,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/qwen2.5-7b-instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "nicosoft/Qwen2.5-7B-Instruct-lora-r64epsp",
+          "declared_base": "unsloth/qwen2.5-7b-instruct-bnb-4bit",
+          "rank": 64,
+          "alpha": 64,
+          "scaling": 1.0,
+          "n_layers": 196,
+          "total_norm": 23.169,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/qwen2.5-7b-instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "hykhhijk/Qwen2.5-7B-Instruct-PEFT",
+          "error": "config load: Can't find 'adapter_config.json' at 'hykhhijk/Qwen2.5-7B-Instruct-PEFT'"
+        },
+        {
+          "id": "llavallava/qwen2.5-7b-instruct-trl-sft-lora-gazefollow_debug",
+          "declared_base": "Qwen/Qwen2.5-VL-7B-Instruct",
+          "rank": 8,
+          "alpha": 16,
+          "scaling": 2.0,
+          "n_layers": 56,
+          "total_norm": 41.202,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=Qwen/Qwen2.5-VL-7B-Instruct)"
+          ]
+        },
+        {
+          "id": "nicosoft/Qwen2.5-7B-Instruct-lora-r16epsp",
+          "declared_base": "unsloth/qwen2.5-7b-instruct-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 196,
+          "total_norm": 14.5,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/qwen2.5-7b-instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "cutelemonlili/Qwen2.5-14B-Instruct_lora_MATH_training_response_Qwen2.5_7B",
+          "declared_base": "Qwen/Qwen2.5-14B-Instruct",
+          "rank": 8,
+          "alpha": 16,
+          "scaling": 2.0,
+          "n_layers": 336,
+          "total_norm": 6.352,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=Qwen/Qwen2.5-14B-Instruct)"
+          ]
+        },
+        {
+          "id": "TheMachinist/Qwen2.5-7B-Instruct-v5-lora",
+          "declared_base": "unsloth/Qwen2.5-7B",
+          "rank": 32,
+          "alpha": 32,
+          "scaling": 1.0,
+          "n_layers": 112,
+          "total_norm": 2.703,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Qwen2.5-7B)"
+          ]
+        },
+        {
+          "id": "AlvinY34/Qwen2.5-7B-Instruct-unsloth_lora_1250",
+          "declared_base": "unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit",
+          "rank": 32,
+          "alpha": 32,
+          "scaling": 1.0,
+          "n_layers": 196,
+          "total_norm": 0.518,
+          "base_match": false,
+          "norm_pass": false,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit)",
+            "norm 0.518 < 1.0"
+          ]
+        },
+        {
+          "id": "llavallava/qwen2.5-7b-instruct-trl-sft-lora-gazefollow_1280",
+          "declared_base": "Qwen/Qwen2.5-VL-7B-Instruct",
+          "rank": 8,
+          "alpha": 16,
+          "scaling": 2.0,
+          "n_layers": 56,
+          "total_norm": 41.012,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=Qwen/Qwen2.5-VL-7B-Instruct)"
+          ]
+        },
+        {
+          "id": "pacohub/Qwen2.5-Coder-7B-Instruct-ti-lora",
+          "declared_base": "unsloth/qwen2.5-coder-7b-instruct-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 196,
+          "total_norm": 8.328,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/qwen2.5-coder-7b-instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "SKNahin/Qwen2.5-Math-7B-Instruct-bnb-4bit-lora",
+          "declared_base": "unsloth/Qwen2.5-Math-7B-Instruct-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 196,
+          "total_norm": 7.191,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Qwen2.5-Math-7B-Instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "TheMachinist/Qwen2.5-7B-Instruct-v1-lora-test",
+          "declared_base": "unsloth/Qwen2.5-7B",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 196,
+          "total_norm": 4.481,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Qwen2.5-7B)"
+          ]
+        },
+        {
+          "id": "kamruzzaman-asif/qwen2.5_7B_instruct_base_lora_merged_15001_30000",
+          "error": "config load: Can't find 'adapter_config.json' at 'kamruzzaman-asif/qwen2.5_7B_instruct_base_lora_merged_15001_30000'"
+        },
+        {
+          "id": "bunnycore/Qwen-2.5-7b-Cool-lora",
+          "declared_base": "unsloth/qwen2.5-7b-instruct-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 196,
+          "total_norm": 4.512,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/qwen2.5-7b-instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "ngxson/LoRA-Qwen2.5-Coder-7B-Instruct",
+          "declared_base": "Qwen/Qwen2.5-Coder-7B",
+          "rank": 64,
+          "alpha": 64,
+          "scaling": 1.0,
+          "n_layers": 197,
+          "total_norm": 37.956,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=Qwen/Qwen2.5-Coder-7B)"
+          ]
+        },
+        {
+          "id": "nicosoft/Qwen2.5-7B-Instruct-lora-r64",
+          "declared_base": "unsloth/qwen2.5-7b-instruct-bnb-4bit",
+          "rank": 64,
+          "alpha": 64,
+          "scaling": 1.0,
+          "n_layers": 196,
+          "total_norm": 12.594,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/qwen2.5-7b-instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "dat-lequoc/fast-apply_lora-4b-v0.v15-Qwen2.5-Coder-7B",
+          "declared_base": "unsloth/Qwen2.5-Coder-7B-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 4.0,
+          "n_layers": 196,
+          "total_norm": 6.378,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Qwen2.5-Coder-7B-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "nicosoft/Qwen2.5-7B-Instruct-lora-r256sp",
+          "declared_base": "unsloth/qwen2.5-7b-instruct-bnb-4bit",
+          "rank": 256,
+          "alpha": 256,
+          "scaling": 1.0,
+          "n_layers": 196,
+          "total_norm": 24.967,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/qwen2.5-7b-instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "yangao381/FlowerTune-Code-Qwen2.5-7B-PEFT",
+          "declared_base": "Qwen/Qwen2.5-7B",
+          "rank": 32,
+          "alpha": 64,
+          "scaling": 2.0,
+          "n_layers": 56,
+          "total_norm": 1.552,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=Qwen/Qwen2.5-7B)"
+          ]
+        },
+        {
+          "id": "nicosoft/Qwen2.5-7B-Instruct-lora-r64sp",
+          "declared_base": "unsloth/qwen2.5-7b-instruct-bnb-4bit",
+          "rank": 64,
+          "alpha": 64,
+          "scaling": 1.0,
+          "n_layers": 196,
+          "total_norm": 17.764,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/qwen2.5-7b-instruct-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "mssongit/Qwen2.5-7B-SFT-LoRA",
+          "declared_base": "Qwen/Qwen2.5-7B-Instruct",
+          "rank": 8,
+          "alpha": 16,
+          "scaling": 2.0,
+          "n_layers": 196,
+          "total_norm": 31.305,
+          "base_match": true,
+          "norm_pass": true,
+          "verdict": "PASS",
+          "fail_reasons": []
+        },
+        {
+          "id": "yhkim9362/Qwen2.5-7B-Instruct-ko-lora-koalpaca-namuwiki",
+          "error": "config load: Can't find 'adapter_config.json' at 'yhkim9362/Qwen2.5-7B-Instruct-ko-lora-koalpaca-namuwiki'"
+        },
+        {
+          "id": "khoantap/Qwen2.5-Coder-7B-GSM8k-LORA",
+          "error": "config load: Can't find 'adapter_config.json' at 'khoantap/Qwen2.5-Coder-7B-GSM8k-LORA'"
+        },
+        {
+          "id": "FINGU-AI/Qwen2.5-7b-lora-e-5",
+          "declared_base": "Qwen/Qwen2.5-7B-Instruct",
+          "rank": 32,
+          "alpha": 32,
+          "scaling": 1.0,
+          "n_layers": 196,
+          "total_norm": 81.068,
+          "base_match": true,
+          "norm_pass": true,
+          "verdict": "PASS",
+          "fail_reasons": []
+        },
+        {
+          "id": "dat-lequoc/fast-apply_lora-4b-v0.13.2.2-Qwen2.5-Coder-7B",
+          "declared_base": "unsloth/Qwen2.5-Coder-7B-bnb-4bit",
+          "rank": 24,
+          "alpha": 16,
+          "scaling": 3.266,
+          "n_layers": 196,
+          "total_norm": 9.341,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/Qwen2.5-Coder-7B-bnb-4bit)"
+          ]
+        },
+        {
+          "id": "GyeongjuLee/lora_model-Qwen2.5-7B-Instruct-bnb-4bit_EMH-interpretations_1",
+          "declared_base": "unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit",
+          "rank": 16,
+          "alpha": 16,
+          "scaling": 1.0,
+          "n_layers": 196,
+          "total_norm": 6.551,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit)"
+          ]
+        }
+      ]
+    }
+  }
+}

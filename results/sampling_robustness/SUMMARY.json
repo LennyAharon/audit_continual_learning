@@ -1,0 +1,136 @@
+{
+  "methods": {
+    "baseline": {
+      "gsm8k_sc": {
+        "sc_accuracy": 0.856,
+        "greedy_accuracy": 0.814,
+        "n_questions": 500,
+        "k_samples": 8,
+        "temperature": 0.7,
+        "seed": 1234,
+        "method": "baseline",
+        "eval": "gsm8k_sc"
+      },
+      "humaneval_passk": {
+        "pass@1": 0.6115853658536586,
+        "pass@5": 0.7102932636469222,
+        "pass@10": 0.7317073170731707,
+        "n_samples": 10,
+        "temperature": 0.2,
+        "seed": 1234,
+        "raw_keys": [
+          "name",
+          "alias",
+          "sample_len",
+          "pass@1,create_test",
+          "pass@1_stderr,create_test",
+          "pass@5,create_test",
+          "pass@5_stderr,create_test",
+          "pass@10,create_test",
+          "pass@10_stderr,create_test"
+        ],
+        "method": "baseline",
+        "eval": "humaneval_passk"
+      }
+    },
+    "naive": {
+      "gsm8k_sc": {
+        "sc_accuracy": 0.76,
+        "greedy_accuracy": 0.676,
+        "n_questions": 500,
+        "k_samples": 8,
+        "temperature": 0.7,
+        "seed": 1234,
+        "method": "naive",
+        "eval": "gsm8k_sc"
+      },
+      "humaneval_passk": {
+        "pass@1": 0.481707317073171,
+        "pass@5": 0.579292489353465,
+        "pass@10": 0.6036585365853658,
+        "n_samples": 10,
+        "temperature": 0.2,
+        "seed": 1234,
+        "raw_keys": [
+          "name",
+          "alias",
+          "sample_len",
+          "pass@1,create_test",
+          "pass@1_stderr,create_test",
+          "pass@5,create_test",
+          "pass@5_stderr,create_test",
+          "pass@10,create_test",
+          "pass@10_stderr,create_test"
+        ],
+        "method": "naive",
+        "eval": "humaneval_passk"
+      }
+    },
+    "ta_lambda0.5": {
+      "gsm8k_sc": {
+        "sc_accuracy": 0.844,
+        "greedy_accuracy": 0.792,
+        "n_questions": 500,
+        "k_samples": 8,
+        "temperature": 0.7,
+        "seed": 1234,
+        "method": "ta_lambda0.5",
+        "eval": "gsm8k_sc"
+      },
+      "humaneval_passk": {
+        "pass@1": 0.5865853658536581,
+        "pass@5": 0.70085656213705,
+        "pass@10": 0.7439024390243902,
+        "n_samples": 10,
+        "temperature": 0.2,
+        "seed": 1234,
+        "raw_keys": [
+          "name",
+          "alias",
+          "sample_len",
+          "pass@1,create_test",
+          "pass@1_stderr,create_test",
+          "pass@5,create_test",
+          "pass@5_stderr,create_test",
+          "pass@10,create_test",
+          "pass@10_stderr,create_test"
+        ],
+        "method": "ta_lambda0.5",
+        "eval": "humaneval_passk"
+      }
+    },
+    "ties_d0.5": {
+      "gsm8k_sc": {
+        "sc_accuracy": 0.856,
+        "greedy_accuracy": 0.782,
+        "n_questions": 500,
+        "k_samples": 8,
+        "temperature": 0.7,
+        "seed": 1234,
+        "method": "ties_d0.5",
+        "eval": "gsm8k_sc"
+      },
+      "humaneval_passk": {
+        "pass@1": 0.5829268292682929,
+        "pass@5": 0.7056475029036006,
+        "pass@10": 0.7317073170731707,
+        "n_samples": 10,
+        "temperature": 0.2,
+        "seed": 1234,
+        "raw_keys": [
+          "name",
+          "alias",
+          "sample_len",
+          "pass@1,create_test",
+          "pass@1_stderr,create_test",
+          "pass@5,create_test",
+          "pass@5_stderr,create_test",
+          "pass@10,create_test",
+          "pass@10_stderr,create_test"
+        ],
+        "method": "ties_d0.5",
+        "eval": "humaneval_passk"
+      }
+    }
+  }
+}

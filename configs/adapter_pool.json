@@ -1,0 +1,36 @@
+{
+  "_comment": "Candidate LoRA adapter pool. Schema: { family: { expected_base: <str>, candidates: [{id, slot_label}] } }. The first six llama entries and four mistral entries are the paper-cited adapters. Extra entries are loaded by the prevalence audit for context but are not used in merging.",
+
+  "llama": {
+    "expected_base": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+    "candidates": [
+      {"id": "kai-xu/Llama-3.1-8B-Instruct-MATH-Finetuned-LoRA",            "slot_label": "math (paper-audited)"},
+      {"id": "yangao381/FlowerTune-Code-Llama-3.1-8B-Instruct-PEFT",        "slot_label": "code (paper-audited)"},
+      {"id": "zjudai/flowertune-general-nlp-lora-llama-3.1-8b-instruct",    "slot_label": "general_nlp (paper-audited)"},
+      {"id": "yangao381/FlowerTune-Medical-Llama-3.1-8B-Instruct-PEFT",     "slot_label": "medical (paper-audited)"},
+      {"id": "TianJun1/llama3.1-8b-code-reflector-lora",                     "slot_label": "code-defective (paper-excluded)"},
+      {"id": "Blackroot/Llama-3-8B-Abomination-LORA",                        "slot_label": "creative-wrong-base (paper-excluded)"},
+
+      {"id": "Madhuvardhanj/llama-3.1-8B-instruct-lora-text-to-SQL",         "slot_label": "sql (extra)"},
+      {"id": "Aakash26/llama-3.1-8B-finetuned-lora-french",                  "slot_label": "french (extra)"},
+      {"id": "Pranjul9/llama-3.1-8B-Instruct-Finetuned-Email-Bot",           "slot_label": "email (extra)"},
+      {"id": "RamishaShahid24/llama_3.1_8B_lora",                            "slot_label": "generic (extra)"},
+      {"id": "YudhishtraSingh/Hate-speech-detection-LoRA-LLama-3.1-8B",      "slot_label": "hate-detection (extra)"},
+      {"id": "yangao381/FlowerTune-NLP-Llama-3.1-8B-Instruct-PEFT",          "slot_label": "nlp-alt (extra)"},
+      {"id": "FrancescoBonzi/llama-3.1-8b-lora-tools",                       "slot_label": "tools (extra)"},
+      {"id": "0x18/llama3.1-8b-instruct-trlx-lora",                          "slot_label": "trl-rlhf (extra)"}
+    ]
+  },
+
+  "mistral": {
+    "expected_base": "mistralai/Mistral-7B-Instruct-v0.3",
+    "candidates": [
+      {"id": "parsak/mistralcode-7b-instruct-lora-adapters",                                "slot_label": "code (paper-failing)"},
+      {"id": "xummer/mistral-7b-gsm8k-lora-en",                                             "slot_label": "math (paper-audited)"},
+      {"id": "mkenfenheuer/Mistral-7B-Instruct-v0.3-ha-function-calling-lora",              "slot_label": "general_nlp (paper-audited)"},
+      {"id": "svjack/Mistral7B_v2_inst_sharegpt_roleplay_chat_lora_small",                  "slot_label": "creative_writing (paper-failing)"},
+      {"id": "kaitchup/Mistral-7B-Instruct-v0.3-LoRA-test",                                 "slot_label": "test (extra)"},
+      {"id": "ali-tharun/Mistral-7B-Instruct-v0.3-finetuned-lora",                          "slot_label": "finetune-generic (extra)"}
+    ]
+  }
+}

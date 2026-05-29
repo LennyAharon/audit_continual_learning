@@ -1,0 +1,69 @@
+{
+  "method": "magmax",
+  "adapter_pool": "audited",
+  "ordering": [
+    "code",
+    "math",
+    "general_nlp",
+    "medical"
+  ],
+  "base_model": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+  "steps": [
+    {
+      "step": 0,
+      "adapter": "code",
+      "metrics": {
+        "gsm8k": {
+          "score": 0.6777862016679302,
+          "stderr": 0.012872435481188778
+        },
+        "humaneval": {
+          "score": 0.6402439024390244,
+          "stderr": 0.0375909243573624
+        }
+      }
+    },
+    {
+      "step": 1,
+      "adapter": "math",
+      "metrics": {
+        "gsm8k": {
+          "score": 0.6990144048521607,
+          "stderr": 0.012634504465211185
+        },
+        "humaneval": {
+          "score": 0.5914634146341463,
+          "stderr": 0.03850220643693083
+        }
+      }
+    },
+    {
+      "step": 2,
+      "adapter": "general_nlp",
+      "metrics": {
+        "gsm8k": {
+          "score": 0.6838514025777104,
+          "stderr": 0.012807630673451482
+        },
+        "humaneval": {
+          "score": 0.5670731707317073,
+          "stderr": 0.038809048796837387
+        }
+      }
+    },
+    {
+      "step": 3,
+      "adapter": "medical",
+      "metrics": {
+        "gsm8k": {
+          "score": 0.686125852918878,
+          "stderr": 0.012782681251053198
+        },
+        "humaneval": {
+          "score": 0.5548780487804879,
+          "stderr": 0.038926421055741504
+        }
+      }
+    }
+  ]
+}

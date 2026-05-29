@@ -1,0 +1,7 @@
+{
+  "score": 0.6402439024390244,
+  "stderr": 0.0375909243573624,
+  "variation": "humaneval_greedy",
+  "method": "baseline",
+  "seed": 5678
+}

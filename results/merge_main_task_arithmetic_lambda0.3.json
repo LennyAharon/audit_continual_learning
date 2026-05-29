@@ -1,0 +1,31 @@
+{
+  "method": "ta_lambda0.3",
+  "scores": {
+    "math500": 0.174,
+    "gsm8k": 0.6747536012130402,
+    "humaneval": 0.5975609756097561
+  },
+  "full": {
+    "math500": {
+      "alias": "hendrycks_math500",
+      "exact_match,none": 0.174,
+      "exact_match_stderr,none": 0.01697127125751611
+    },
+    "gsm8k": {
+      "alias": "gsm8k",
+      "exact_match,strict-match": 0.6747536012130402,
+      "exact_match_stderr,strict-match": 0.012903904752543924,
+      "exact_match,flexible-extract": 0.7611827141774071,
+      "exact_match_stderr,flexible-extract": 0.011744097081003803
+    },
+    "humaneval": {
+      "alias": "humaneval",
+      "pass@1,create_test": 0.5975609756097561,
+      "pass@1_stderr,create_test": 0.03841026959095088
+    }
+  },
+  "kwargs": {
+    "lambda_val": 0.3
+  },
+  "lambdas_per_adapter": null
+}

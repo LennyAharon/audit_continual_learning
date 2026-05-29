@@ -1,0 +1,14 @@
+{
+  "task": "code",
+  "adapter_id": "yangao381/FlowerTune-Code-Llama-3.1-8B-Instruct-PEFT",
+  "scores": {
+    "humaneval_pass1": 0.5975609756097561
+  },
+  "full": {
+    "humaneval": {
+      "alias": "humaneval",
+      "pass@1,create_test": 0.5975609756097561,
+      "pass@1_stderr,create_test": 0.03841026959095088
+    }
+  }
+}

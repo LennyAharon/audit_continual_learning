@@ -1,0 +1,125 @@
+{
+  "methods": {
+    "naive": {
+      "0": {
+        "adapter": "code",
+        "gsm8k": 0.6846095526914329,
+        "humaneval": 0.6158536585365854
+      },
+      "1": {
+        "adapter": "math",
+        "gsm8k": 0.6512509476876421,
+        "humaneval": 0.4634146341463415
+      },
+      "2": {
+        "adapter": "general_nlp",
+        "gsm8k": 0.6285064442759667,
+        "humaneval": 0.4695121951219512
+      },
+      "3": {
+        "adapter": "medical",
+        "gsm8k": 0.6148597422289613,
+        "humaneval": 0.47560975609756095
+      }
+    },
+    "ta_lambda0.5": {
+      "0": {
+        "adapter": "code",
+        "gsm8k": 0.6830932524639879,
+        "humaneval": 0.6402439024390244
+      },
+      "1": {
+        "adapter": "math",
+        "gsm8k": 0.7073540561031084,
+        "humaneval": 0.5975609756097561
+      },
+      "2": {
+        "adapter": "general_nlp",
+        "gsm8k": 0.6884003032600455,
+        "humaneval": 0.5853658536585366
+      },
+      "3": {
+        "adapter": "medical",
+        "gsm8k": 0.7012888551933283,
+        "humaneval": 0.5914634146341463
+      }
+    },
+    "ties_d0.5": {
+      "0": {
+        "adapter": "code",
+        "gsm8k": 0.690674753601213,
+        "humaneval": 0.6402439024390244
+      },
+      "1": {
+        "adapter": "math",
+        "gsm8k": 0.7134192570128886,
+        "humaneval": 0.5792682926829268
+      },
+      "2": {
+        "adapter": "general_nlp",
+        "gsm8k": 0.6921910538286581,
+        "humaneval": 0.5670731707317073
+      },
+      "3": {
+        "adapter": "medical",
+        "gsm8k": 0.7194844579226687,
+        "humaneval": 0.5670731707317073
+      }
+    },
+    "dare_d0.5": {
+      "0": {
+        "adapter": "code",
+        "gsm8k": 0.7043214556482184,
+        "humaneval": 0.5914634146341463
+      },
+      "1": {
+        "adapter": "math",
+        "gsm8k": 0.6467020470053071,
+        "humaneval": 0.4817073170731707
+      },
+      "2": {
+        "adapter": "general_nlp",
+        "gsm8k": 0.6239575435936315,
+        "humaneval": 0.4634146341463415
+      },
+      "3": {
+        "adapter": "medical",
+        "gsm8k": 0.5799848369977255,
+        "humaneval": 0.5
+      }
+    },
+    "magmax": {
+      "0": {
+        "adapter": "code",
+        "gsm8k": 0.6777862016679302,
+        "humaneval": 0.6402439024390244
+      },
+      "1": {
+        "adapter": "math",
+        "gsm8k": 0.6990144048521607,
+        "humaneval": 0.5914634146341463
+      },
+      "2": {
+        "adapter": "general_nlp",
+        "gsm8k": 0.6838514025777104,
+        "humaneval": 0.5670731707317073
+      },
+      "3": {
+        "adapter": "medical",
+        "gsm8k": 0.686125852918878,
+        "humaneval": 0.5548780487804879
+      }
+    }
+  },
+  "ordering": [
+    "code",
+    "math",
+    "general_nlp",
+    "medical"
+  ],
+  "unmerged_baseline": {
+    "gsm8k": 0.7073540561031084,
+    "humaneval": 0.6280487804878049,
+    "math500": 0.154
+  }
+}

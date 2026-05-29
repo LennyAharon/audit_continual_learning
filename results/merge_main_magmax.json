@@ -1,0 +1,27 @@
+{
+  "method": "magmax",
+  "scores": {
+    "gsm8k": 0.6853677028051555,
+    "humaneval": 0.524390243902439,
+    "math500": 0.168
+  },
+  "full": {
+    "gsm8k": {
+      "alias": "gsm8k",
+      "exact_match,strict-match": 0.6853677028051555,
+      "exact_match_stderr,strict-match": 0.012791037227336027,
+      "exact_match,flexible-extract": 0.7293404094010614,
+      "exact_match_stderr,flexible-extract": 0.012238245006183417
+    },
+    "humaneval": {
+      "alias": "humaneval",
+      "pass@1,create_test": 0.524390243902439,
+      "pass@1_stderr,create_test": 0.03911639983703664
+    },
+    "math500": {
+      "alias": "hendrycks_math500",
+      "exact_match,none": 0.168,
+      "exact_match_stderr,none": 0.01673655354154187
+    }
+  }
+}

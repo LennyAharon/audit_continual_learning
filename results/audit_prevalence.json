@@ -1,0 +1,245 @@
+{
+  "config_path": "configs/audit_candidates.json",
+  "families": {
+    "llama": {
+      "expected_base": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+      "prevalence": {
+        "n_total_candidates": 14,
+        "n_skipped_placeholder": 2,
+        "n_loadable": 6,
+        "n_audited_pass": 4,
+        "n_base_mismatch": 1,
+        "n_near_zero_norm": 1,
+        "n_norm_fail": 1,
+        "rates_pct": {
+          "loadable": 42.857142857142854,
+          "pass": 28.571428571428573,
+          "base_mismatch": 16.666666666666668,
+          "near_zero_norm": 16.666666666666668,
+          "norm_fail": 16.666666666666668
+        }
+      },
+      "results": [
+        {
+          "id": "kai-xu/Llama-3.1-8B-Instruct-MATH-Finetuned-LoRA",
+          "declared_base": "meta-llama/Llama-3.1-8B-Instruct",
+          "rank": 8,
+          "alpha": 8,
+          "scaling": 1.0,
+          "n_layers": 64,
+          "total_norm": 16.62,
+          "base_match": true,
+          "norm_pass": true,
+          "verdict": "PASS",
+          "fail_reasons": [],
+          "slot_label": "math (paper-audited)"
+        },
+        {
+          "id": "yangao381/FlowerTune-Code-Llama-3.1-8B-Instruct-PEFT",
+          "declared_base": "meta-llama/Llama-3.1-8B-Instruct",
+          "rank": 32,
+          "alpha": 64,
+          "scaling": 2.0,
+          "n_layers": 64,
+          "total_norm": 1.73,
+          "base_match": true,
+          "norm_pass": true,
+          "verdict": "PASS",
+          "fail_reasons": [],
+          "slot_label": "code (paper-audited)"
+        },
+        {
+          "id": "zjudai/flowertune-general-nlp-lora-llama-3.1-8b-instruct",
+          "declared_base": "meta-llama/Llama-3.1-8B-Instruct",
+          "rank": 32,
+          "alpha": 64,
+          "scaling": 2.0,
+          "n_layers": 64,
+          "total_norm": 1.067,
+          "base_match": true,
+          "norm_pass": true,
+          "verdict": "PASS",
+          "fail_reasons": [],
+          "slot_label": "general_nlp (paper-audited)"
+        },
+        {
+          "id": "yangao381/FlowerTune-Medical-Llama-3.1-8B-Instruct-PEFT",
+          "declared_base": "meta-llama/Llama-3.1-8B-Instruct",
+          "rank": 32,
+          "alpha": 64,
+          "scaling": 2.0,
+          "n_layers": 64,
+          "total_norm": 1.554,
+          "base_match": true,
+          "norm_pass": true,
+          "verdict": "PASS",
+          "fail_reasons": [],
+          "slot_label": "medical (paper-audited)"
+        },
+        {
+          "id": "TianJun1/llama3.1-8b-code-reflector-lora",
+          "declared_base": "meta-llama/Llama-3.1-8B-Instruct",
+          "rank": 16,
+          "alpha": 32,
+          "scaling": 2.0,
+          "n_layers": 224,
+          "total_norm": 0.016,
+          "base_match": true,
+          "norm_pass": false,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "norm 0.016 < 1.0"
+          ],
+          "slot_label": "code-defective (paper-excluded)"
+        },
+        {
+          "id": "Blackroot/Llama-3-8B-Abomination-LORA",
+          "declared_base": "Llama-3-8b-Instruct",
+          "rank": 64,
+          "alpha": 32,
+          "scaling": 4.0,
+          "n_layers": 224,
+          "total_norm": 46.091,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=Llama-3-8b-Instruct)"
+          ],
+          "slot_label": "creative-wrong-base (paper-excluded)"
+        },
+        {
+          "id": "Madhuvardhanj/llama-3.1-8B-instruct-lora-text-to-SQL",
+          "error": "config load: Can't find 'adapter_config.json' at 'Madhuvardhanj/llama-3.1-8B-instruct-lora-text-to-SQL'",
+          "slot_label": "sql"
+        },
+        {
+          "id": "Aakash26/llama-3.1-8B-finetuned-lora-french",
+          "error": "config load: Can't find 'adapter_config.json' at 'Aakash26/llama-3.1-8B-finetuned-lora-french'",
+          "slot_label": "french"
+        },
+        {
+          "id": "Pranjul9/llama-3.1-8B-Instruct-Finetuned-Email-Bot",
+          "error": "config load: Can't find 'adapter_config.json' at 'Pranjul9/llama-3.1-8B-Instruct-Finetuned-Email-Bot'",
+          "slot_label": "email"
+        },
+        {
+          "id": "RamishaShahid24/llama_3.1_8B_lora",
+          "error": "config load: Can't find 'adapter_config.json' at 'RamishaShahid24/llama_3.1_8B_lora'",
+          "slot_label": "generic"
+        },
+        {
+          "id": "YudhishtraSingh/Hate-speech-detection-LoRA-LLama-3.1-8B",
+          "error": "config load: Can't find 'adapter_config.json' at 'YudhishtraSingh/Hate-speech-detection-LoRA-LLama-3.1-8B'",
+          "slot_label": "hate-detection"
+        },
+        {
+          "id": "yangao381/FlowerTune-NLP-Llama-3.1-8B-Instruct-PEFT",
+          "error": "config load: Can't find 'adapter_config.json' at 'yangao381/FlowerTune-NLP-Llama-3.1-8B-Instruct-PEFT'",
+          "slot_label": "nlp-alt"
+        },
+        {
+          "id": "FrancescoBonzi/llama-3.1-8b-lora-tools",
+          "error": "config load: Can't find 'adapter_config.json' at 'FrancescoBonzi/llama-3.1-8b-lora-tools'",
+          "slot_label": "tools"
+        },
+        {
+          "id": "0x18/llama3.1-8b-instruct-trlx-lora",
+          "error": "config load: Can't find 'adapter_config.json' at '0x18/llama3.1-8b-instruct-trlx-lora'",
+          "slot_label": "trl-rlhf"
+        }
+      ]
+    },
+    "mistral": {
+      "expected_base": "mistralai/Mistral-7B-Instruct-v0.3",
+      "prevalence": {
+        "n_total_candidates": 6,
+        "n_skipped_placeholder": 0,
+        "n_loadable": 4,
+        "n_audited_pass": 2,
+        "n_base_mismatch": 2,
+        "n_near_zero_norm": 0,
+        "n_norm_fail": 0,
+        "rates_pct": {
+          "loadable": 66.66666666666667,
+          "pass": 33.333333333333336,
+          "base_mismatch": 50.0,
+          "near_zero_norm": 0.0,
+          "norm_fail": 0.0
+        }
+      },
+      "results": [
+        {
+          "id": "parsak/mistralcode-7b-instruct-lora-adapters",
+          "declared_base": "mistralai/Mistral-7B-Instruct-v0.1",
+          "rank": 16,
+          "alpha": 32,
+          "scaling": 2.0,
+          "n_layers": 224,
+          "total_norm": 3.625,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=mistralai/Mistral-7B-Instruct-v0.1)"
+          ],
+          "slot_label": "code (paper-failing)"
+        },
+        {
+          "id": "xummer/mistral-7b-gsm8k-lora-en",
+          "declared_base": "mistralai/Mistral-7B-Instruct-v0.3",
+          "rank": 16,
+          "alpha": 32,
+          "scaling": 2.0,
+          "n_layers": 224,
+          "total_norm": 5.2,
+          "base_match": true,
+          "norm_pass": true,
+          "verdict": "PASS",
+          "fail_reasons": [],
+          "slot_label": "math (paper-audited)"
+        },
+        {
+          "id": "mkenfenheuer/Mistral-7B-Instruct-v0.3-ha-function-calling-lora",
+          "declared_base": "mistralai/Mistral-7B-Instruct-v0.3",
+          "rank": 8,
+          "alpha": 8,
+          "scaling": 1.0,
+          "n_layers": 224,
+          "total_norm": 7.522,
+          "base_match": true,
+          "norm_pass": true,
+          "verdict": "PASS",
+          "fail_reasons": [],
+          "slot_label": "general_nlp (paper-audited)"
+        },
+        {
+          "id": "svjack/Mistral7B_v2_inst_sharegpt_roleplay_chat_lora_small",
+          "declared_base": "mistralai/Mistral-7B-Instruct-v0.2",
+          "rank": 8,
+          "alpha": 16,
+          "scaling": 2.0,
+          "n_layers": 64,
+          "total_norm": 7.164,
+          "base_match": false,
+          "norm_pass": true,
+          "verdict": "FAIL",
+          "fail_reasons": [
+            "base mismatch (declared=mistralai/Mistral-7B-Instruct-v0.2)"
+          ],
+          "slot_label": "creative_writing (paper-failing)"
+        },
+        {
+          "id": "kaitchup/Mistral-7B-Instruct-v0.3-LoRA-test",
+          "error": "config load: Can't find 'adapter_config.json' at 'kaitchup/Mistral-7B-Instruct-v0.3-LoRA-test'",
+          "slot_label": "test"
+        },
+        {
+          "id": "ali-tharun/Mistral-7B-Instruct-v0.3-finetuned-lora",
+          "error": "config load: Can't find 'adapter_config.json' at 'ali-tharun/Mistral-7B-Instruct-v0.3-finetuned-lora'",
+          "slot_label": "finetune-generic"
+        }
+      ]
+    }
+  }
+}

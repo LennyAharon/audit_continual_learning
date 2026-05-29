@@ -1,0 +1,67 @@
+{
+  "expected_base": "mistralai/Mistral-7B-Instruct-v0.3",
+  "adapters": [
+    {
+      "task": "code",
+      "id": "parsak/mistralcode-7b-instruct-lora-adapters",
+      "declared_base": "mistralai/Mistral-7B-Instruct-v0.1",
+      "rank": 16,
+      "alpha": 32,
+      "scaling": 2.0,
+      "n_layers": 224,
+      "total_norm": 3.625,
+      "base_match": false,
+      "norm_pass": true,
+      "verdict": "FAIL"
+    },
+    {
+      "task": "math",
+      "id": "xummer/mistral-7b-gsm8k-lora-en",
+      "declared_base": "mistralai/Mistral-7B-Instruct-v0.3",
+      "rank": 16,
+      "alpha": 32,
+      "scaling": 2.0,
+      "n_layers": 224,
+      "total_norm": 5.200,
+      "base_match": true,
+      "norm_pass": true,
+      "verdict": "PASS"
+    },
+    {
+      "task": "general_nlp",
+      "id": "mkenfenheuer/Mistral-7B-Instruct-v0.3-ha-function-calling-lora",
+      "declared_base": "mistralai/Mistral-7B-Instruct-v0.3",
+      "rank": 8,
+      "alpha": 8,
+      "scaling": 1.0,
+      "n_layers": 224,
+      "total_norm": 7.522,
+      "base_match": true,
+      "norm_pass": true,
+      "verdict": "PASS"
+    },
+    {
+      "task": "creative_writing",
+      "id": "svjack/Mistral7B_v2_inst_sharegpt_roleplay_chat_lora_small",
+      "declared_base": "mistralai/Mistral-7B-Instruct-v0.2",
+      "rank": 8,
+      "alpha": 16,
+      "scaling": 2.0,
+      "n_layers": 64,
+      "total_norm": 7.164,
+      "base_match": false,
+      "norm_pass": true,
+      "verdict": "FAIL"
+    }
+  ],
+  "summary": {
+    "total": 4,
+    "passing": 2,
+    "failing": 2,
+    "fail_reasons": {
+      "code": "declared base v0.1, expected v0.3",
+      "creative_writing": "declared base v0.2, expected v0.3"
+    },
+    "key_finding": "Both failing adapters have non-trivial Frobenius norms (3.6 and 7.2) and would pass a norm-only check; the base-model version check is what catches them."
+  }
+}

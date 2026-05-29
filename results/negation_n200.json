@@ -1,0 +1,36 @@
+{
+  "method": "neg_per_adapter",
+  "lambda_per_adapter": {
+    "code": 1.0,
+    "math": -0.5,
+    "general_nlp": 1.0,
+    "medical": 1.0
+  },
+  "naive_probe": 0.405,
+  "final_probe": 0.49,
+  "probe_n": 200,
+  "scores": {
+    "math500": 0.15,
+    "gsm8k": 0.6717210007581501,
+    "humaneval": 0.5548780487804879
+  },
+  "full": {
+    "math500": {
+      "alias": "hendrycks_math500",
+      "exact_match,none": 0.15,
+      "exact_match_stderr,none": 0.0159847121351649
+    },
+    "gsm8k": {
+      "alias": "gsm8k",
+      "exact_match,strict-match": 0.6717210007581501,
+      "exact_match_stderr,strict-match": 0.01293475801944961,
+      "exact_match,flexible-extract": 0.7194844579226687,
+      "exact_match_stderr,flexible-extract": 0.012374608490929565
+    },
+    "humaneval": {
+      "alias": "humaneval",
+      "pass@1,create_test": 0.5548780487804879,
+      "pass@1_stderr,create_test": 0.038926421055741504
+    }
+  }
+}

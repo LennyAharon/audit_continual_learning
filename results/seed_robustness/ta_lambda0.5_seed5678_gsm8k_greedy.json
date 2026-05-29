@@ -1,0 +1,7 @@
+{
+  "score": 0.686125852918878,
+  "stderr": 0.012782681251053194,
+  "variation": "gsm8k_greedy",
+  "method": "ta_lambda0.5",
+  "seed": 5678
+}

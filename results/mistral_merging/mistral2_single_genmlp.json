@@ -1,0 +1,23 @@
+{
+  "method": "single_genmlp",
+  "scores": {
+    "gsm8k": 0.3646702047005307,
+    "humaneval": 0.0
+  },
+  "full": {
+    "gsm8k": {
+      "alias": "gsm8k",
+      "exact_match,strict-match": 0.3646702047005307,
+      "exact_match_stderr,strict-match": 0.013258428375662245,
+      "exact_match,flexible-extract": 0.3661865049279757,
+      "exact_match_stderr,flexible-extract": 0.01327010023874884
+    },
+    "humaneval": {
+      "alias": "humaneval",
+      "pass@1,create_test": 0.0,
+      "pass@1_stderr,create_test": 0.0
+    }
+  },
+  "model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "audit_filter": "version_match"
+}
