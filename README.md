@@ -1,6 +1,6 @@
 # Audit Before You Merge
 
-Code for **"Audit Before You Merge: Provenance, Probing, and Continual LoRA Composition"** (CATS Workshop at ICML 2026).
+Code for **"Audit Before You Merge: Provenance, Probing, and Continual LoRA Composition"** (Continual Adaptation at Scale: Towards Sustainable AI Workshop at ICML 2026).
 
 > Post-hoc merging of public LoRA adapters is bottlenecked less on new merging methods than on the measurement infrastructure needed to evaluate them. This repo contains the audit, leakage-free probing, and merge-method comparisons that produce every number and figure in the paper.
 
