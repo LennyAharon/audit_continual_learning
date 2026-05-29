@@ -6,7 +6,7 @@ qualitative layer/block sensitivity patterns that the reviewer was
 asking about.
 
 Outputs:
-  - Markdown summary: submission_workshop/BLOCK_IMPORTANCE_ANALYSIS.md
+  - Markdown summary: results/BLOCK_IMPORTANCE_ANALYSIS.md
   - CSV for plotting: results/block_importance.csv
 
 No GPU / no HF needed.
@@ -19,7 +19,7 @@ from pathlib import Path
 
 PROBE_JSON = "results/leakfree_block_probe.json"
 OUT_CSV    = "results/block_importance.csv"
-OUT_MD     = "submission_workshop/BLOCK_IMPORTANCE_ANALYSIS.md"
+OUT_MD     = "results/BLOCK_IMPORTANCE_ANALYSIS.md"
 
 
 def main():

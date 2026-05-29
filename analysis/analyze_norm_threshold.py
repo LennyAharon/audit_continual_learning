@@ -12,7 +12,7 @@ No GPU / no HF / no internet needed — operates on audit_pool.json.
 
 Output:
   results/norm_threshold_calibration.json
-  submission_workshop/NORM_THRESHOLD_CALIBRATION.md
+  results/NORM_THRESHOLD_CALIBRATION.md
 """
 
 import json
@@ -21,7 +21,7 @@ import os
 
 AUDIT_JSON = "results/audit_pool.json"
 OUT_JSON   = "results/norm_threshold_calibration.json"
-OUT_MD     = "submission_workshop/NORM_THRESHOLD_CALIBRATION.md"
+OUT_MD     = "results/NORM_THRESHOLD_CALIBRATION.md"
 
 
 def metrics_for(entry: dict) -> dict | None:
