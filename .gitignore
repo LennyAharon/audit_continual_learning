@@ -22,9 +22,6 @@ Thumbs.db
 .idea/
 *.swp
 
-# Claude Code
-.claude/
-
 # HuggingFace cache (if anyone runs from this dir)
 .cache/
 hf_cache/
